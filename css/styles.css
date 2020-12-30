@@ -24,7 +24,6 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  /*--primary: #fed136;*/
   --primary: #154594;
   --secondary: #6c757d;
   --success: #28a745;
@@ -10048,6 +10047,17 @@ img::-moz-selection {
   justify-content: center;
   padding: 0;
   border-radius: 100%;
+}
+
+.btn-social-body {
+  height: 7.5rem;
+  width: 7.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+  font-size: 5rem;
 }
 
 #mainNav {
