@@ -10180,6 +10180,21 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+.top-image {
+  position: absolute;
+  left: 5px;
+  top: 245px;
+  z-index: 1;
+  color: var(--light);
+  font-size: 50px;
+}
+.top-image:hover {
+  position: absolute;
+  left: 5px;
+  top: 245px;
+  z-index: 1;
+  color: var(--light);
+}
 #portfolio .portfolio-item {
   max-width: 25rem;
   margin-left: auto;
