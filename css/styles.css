@@ -22,9 +22,8 @@
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
-  --gray: #6c757d;
+  --primary: #6c757d;
   --gray-dark: #343a40;
-  --primary: #154594;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -60,8 +59,8 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
+  font-family: Calibri, "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -361,7 +360,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Calibri Light" ,"Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
 }
@@ -371,7 +370,8 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 h3, .h3 {
@@ -598,8 +598,8 @@ pre code {
 .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
   position: relative;
   width: 100%;
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .col {
@@ -9994,14 +9994,15 @@ p {
   padding: 6rem 0;
 }
 .page-section h2.section-heading {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: bold;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  font-style: italic;
+  font-weight: bold;
   margin-bottom: 4rem;
 }
 
@@ -10084,17 +10085,18 @@ img::-moz-selection {
 #mainNav .navbar-brand img {
   height: 3rem;
 }
+/*NAVBAR OPTIONS*/
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   color: var(--light);
-  background-color: #212529;
+  /*background-color: #212529;*/
   letter-spacing: 0.05em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: var(--primary);
-  -webkit-text-stroke: 0.015rem;
-  -webkit-text-stroke-color: var(--light);
+  color: var(--light);
+  -webkit-text-stroke: 0.04rem;
+  -webkit-text-stroke-color: var(--primary);
 }
 
 @media (min-width: 992px) {
