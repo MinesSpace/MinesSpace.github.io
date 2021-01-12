@@ -10184,16 +10184,24 @@ header.masthead .masthead-heading {
 }
 .top-image {
   position: absolute;
+  /*
   left: 5px;
   top: 245px;
+  */
+  left: 0.5rem;
+  top: 0.5rem;
   z-index: 1;
   color: var(--light);
   font-size: 50px;
 }
 .top-image:hover {
   position: absolute;
+  /*
   left: 5px;
   top: 245px;
+  */
+  left: 0.5rem;
+  top: 0.5rem;
   z-index: 1;
   color: var(--light);
 }
@@ -10251,7 +10259,7 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .portfolio-modal .modal-content h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 3rem;
 }
 .portfolio-modal .modal-content p.item-intro {
