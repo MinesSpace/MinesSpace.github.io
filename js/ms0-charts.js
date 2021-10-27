@@ -101,21 +101,21 @@ config_acc = {
         labels: time,
         datasets: [
             {
-                label: "ACC X (m/s2)",
+                label: "ACC X (g)",
                 fill: false,
                 backgroundColor: "red",
                 borderColor: "red",
                 data: acc_x
             },
             {
-                label: "ACC Y (m/s2)",
+                label: "ACC Y (g)",
                 fill: false,
                 backgroundColor: "blue",
                 borderColor: "blue",
                 data: acc_y
             },
             {
-                label: "ACC Z (m/s2)",
+                label: "ACC Z (g)",
                 fill: false,
                 backgroundColor: "green",
                 borderColor: "green",
@@ -142,11 +142,11 @@ config_acc = {
             yAxes1: {
                 scaleLabel: {
                     display: true,
-                    labelString: "m/s2"
+                    labelString: "g"
                 },
                 title: {
                     display: true,
-                    text: 'Accelerometers (m/s2)'
+                    text: 'Accelerometers (g)'
                 },
                 position: 'left'
             }
