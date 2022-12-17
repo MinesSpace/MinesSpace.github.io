@@ -9993,6 +9993,10 @@ p {
 .page-section {
   padding: 6rem 0;
 }
+.page-section-timeline {
+  padding: 6rem 0;
+  background-image: url(../assets/img/about/background.jpg);
+}
 .page-section h2.section-heading {
   font-size: 3rem;
   font-weight: bold;
