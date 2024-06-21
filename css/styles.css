@@ -3970,6 +3970,7 @@ input[type=button].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  white-space: nowrap;
 }
 .navbar .container,
 .navbar .container-fluid,
