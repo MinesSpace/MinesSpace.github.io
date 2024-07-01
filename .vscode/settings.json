@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.Rmd": "rmd"
+    },
+    "r.rpath.windows": "C:\\Program Files\\R\\R-4.3.3\\bin\\x64\\",
+    "latex.formatter.columnLimit": 80
+}
