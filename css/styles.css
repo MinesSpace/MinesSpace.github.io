@@ -828,7 +828,8 @@ pre code {
   margin-left: 91.6666666667%;
 }
 
-@media (min-width: 576px) {
+/*Comportement bizarre, je préfère tout enlever*/
+/* @media (min-width: 576px) { 
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
@@ -1038,7 +1039,7 @@ pre code {
   .offset-sm-11 {
     margin-left: 91.6666666667%;
   }
-}
+}*/
 @media (min-width: 768px) {
   .col-md {
     flex-basis: 0;
@@ -10417,7 +10418,7 @@ header.masthead .masthead-heading {
 .timeline > li .timeline-panel {
   position: relative;
   float: right;
-  width: 25%;
+  width: 100%;
   padding: 0 20px 0 100px;
   text-align: left;
 }
