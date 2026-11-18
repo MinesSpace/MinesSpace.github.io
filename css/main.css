@@ -49,15 +49,16 @@
     --gutter: clamp(16px, 4vw, 32px);
 }
 
-/* Grands écrans : contenu plus large et texte légèrement agrandi */
-@media (min-width: 1680px) {
-    :root { --container: 1400px; }
-    html { font-size: 106.25%; }
-}
-@media (min-width: 2200px) {
-    :root { --container: 1640px; }
-    html { font-size: 118.75%; }
-}
+/* Grands écrans : tout le site est agrandi proportionnellement (comme un zoom
+   du navigateur), pour qu'il occupe l'écran au lieu d'une colonne étroite. */
+/* --z = facteur de zoom, pour corriger les hauteurs en vh (que le zoom agrandit aussi) */
+:root { --z: 1; }
+@media (min-width: 1700px) { :root { --z: 1.15; } }
+@media (min-width: 2100px) { :root { --z: 1.3; } }
+@media (min-width: 2400px) { :root { --z: 1.4; } }
+@media (min-width: 3000px) { :root { --z: 1.75; } }
+@supports (zoom: 1) { html { zoom: var(--z); } }
+@supports not (zoom: 1) { :root { --z: 1; } }
 
 /* Thème sombre : préférence système (sans choix enregistré) et choix explicite */
 @media (prefers-color-scheme: dark) {
@@ -414,7 +415,7 @@ body > svg:first-child { width: 0; height: 0; overflow: hidden; }
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: min(calc(100svh - var(--nav-h)), 860px);
+    min-height: min(calc(100svh / var(--z) - var(--nav-h)), 860px);
     padding-top: clamp(64px, 11vw, 144px);
     overflow: hidden;
     background: var(--bg);
@@ -1445,7 +1446,7 @@ body > svg:first-child { width: 0; height: 0; overflow: hidden; }
 .modal {
     width: min(760px, calc(100vw - 32px));
     max-width: none;
-    max-height: calc(100dvh - 32px);
+    max-height: calc(100dvh / var(--z) - 32px);
     padding: 0;
     overflow: hidden;
     border: 1px solid var(--line);
@@ -1482,7 +1483,7 @@ body > svg:first-child { width: 0; height: 0; overflow: hidden; }
 
 .modal__close { position: absolute; top: 14px; right: 14px; z-index: 2; }
 .modal__content {
-    max-height: calc(100dvh - 34px);
+    max-height: calc(100dvh / var(--z) - 34px);
     padding: clamp(24px, 4vw, 40px);
     overflow-y: auto;
     overscroll-behavior: contain;
@@ -1605,7 +1606,7 @@ body > svg:first-child { width: 0; height: 0; overflow: hidden; }
 .lightbox__figure { margin: 0; }
 .lightbox__img {
     width: 100%;
-    max-height: calc(100dvh - 120px);
+    max-height: calc(100dvh / var(--z) - 120px);
     object-fit: contain;
     background: #000;
 }
