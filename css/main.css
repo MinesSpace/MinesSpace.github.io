@@ -49,6 +49,16 @@
     --gutter: clamp(16px, 4vw, 32px);
 }
 
+/* Grands écrans : contenu plus large et texte légèrement agrandi */
+@media (min-width: 1680px) {
+    :root { --container: 1400px; }
+    html { font-size: 106.25%; }
+}
+@media (min-width: 2200px) {
+    :root { --container: 1640px; }
+    html { font-size: 118.75%; }
+}
+
 /* Thème sombre : préférence système (sans choix enregistré) et choix explicite */
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
@@ -411,14 +421,19 @@ body > svg:first-child { width: 0; height: 0; overflow: hidden; }
     color: var(--ink);
 }
 
-/* Mer de nuages en plein cadre : jour (clair) / nuit (sombre).
-   Le ciel, calme à gauche, porte le texte ; les nuages se fondent dans la page en bas. */
+/* Photo d'accueil : fusée sur la rampe (clair) / trajectoire de nuit (sombre).
+   Elle est calée sur la colonne de contenu (et non sur la largeur de l'écran),
+   pour rester à droite du titre quelle que soit la taille de l'écran. */
+.hero {
+    --wrap: min(100%, var(--container));
+    --wrap-left: calc(50% - var(--wrap) / 2);
+}
 .hero__img {
     position: absolute;
     top: 0;
-    left: 30%;             /* décale l'astre à droite du titre */
+    left: calc(var(--wrap-left) + var(--wrap) * 0.26);
     z-index: -2;
-    width: 100%;
+    width: max(100%, 1400px);
     height: 100%;
     object-fit: cover;
     object-position: 50% 42%;
@@ -434,8 +449,8 @@ body > svg:first-child { width: 0; height: 0; overflow: hidden; }
 .hero__img--dark { display: none; }
 /* Jour : fusée sur la rampe, cadrée à droite pour garder la coiffe */
 .hero__img--light {
-    left: 44%;
-    width: 56%;
+    left: calc(var(--wrap-left) + var(--wrap) * 0.43);
+    width: calc(100% - var(--wrap-left) - var(--wrap) * 0.43);
     object-position: 100% 50%;
     -webkit-mask-image:
         linear-gradient(90deg, transparent 0%, #000 18%),
@@ -1727,8 +1742,8 @@ body > svg:first-child { width: 0; height: 0; overflow: hidden; }
         -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 70%, transparent 100%);
         mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 70%, transparent 100%);
     }
-    .hero__img { top: auto; left: auto; object-position: 52% 35%; }
-    .hero__img--light { width: 100%; object-position: 62% 45%; }
+    .hero__img { top: auto; left: auto; width: 100%; object-position: 52% 35%; }
+    .hero__img--light { left: auto; width: 100%; object-position: 62% 45%; }
     .hero::before { display: none; }
     .hero__inner { order: 1; }
     .hero > .container:last-child { order: 3; }
