@@ -1,170 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Mines Space - L'association spatiale de l'école des Mines de Saint Etienne" />
-        <meta name="author" content="Mines Space" />
-        <meta name="google-site-verification" content="7t-uLKByJ_xhqpCq4-QCEBxVagRk8Dj_m0aSfEMAF_k" />
-        <title>Mines Space - MS0 : Results</title>
-        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../css/styles.css" rel="stylesheet" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MARSAUT 0 · Flight results · MINES SPACE</title>
+    <meta name="description" content="Flight results of MARSAUT 0, MINES SPACE's first FUSEX (C'Space 2021): temperature, pressure, accelerometers and gyrometers." />
+    <link rel="alternate" hreflang="fr" href="https://minesspace.fr/fr/ms0-result.html" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />    <script>
+        (function () {
+            var root = document.documentElement, theme = null;
+            root.classList.add('js');
+            try { theme = localStorage.getItem('ms-theme'); } catch (e) {}
+            if (theme !== 'light' && theme !== 'dark') {
+                theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            root.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <script src="../js/analytics.js"></script>
+</head>
+<body data-mission="ms0">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <defs>
+            <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+            <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+            <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+            <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+            <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+            <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+            <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+            <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+            <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+        </defs>
+    </svg>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LN1GFX018X"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <a class="skip-link" href="#contenu">Skip to content</a>
 
-            gtag('config', 'G-LN1GFX018X');
-        </script>
-    </head>
-    <body id="ms0-result">
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="../en/index.html"><img src="../assets/img/navbar-logo.svg" alt="" /></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ml-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#results">Results</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#downloads">Downloads</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../fr/ms0-result.html">🇫🇷</a></li>
-                    </ul>
-                </div>
+    <div class="consent-layer" id="consent" hidden>
+        <div class="consent" role="dialog" aria-modal="true" aria-labelledby="consent-title" aria-describedby="consent-text">
+            <p class="consent__title" id="consent-title">Audience measurement cookies</p>
+            <p class="consent__text" id="consent-text">With your consent, we use Google Analytics to measure traffic on this site. No advertising. You can change your mind at any time via “Manage cookies” at the bottom of the page.</p>
+            <div class="consent__actions">
+                <button class="consent__btn" type="button" data-consent="deny">Decline</button>
+                <button class="consent__btn" type="button" data-consent="accept">Accept</button>
             </div>
+        </div>
+    </div>
+
+    <header class="site-nav" data-nav>
+        <div class="container site-nav__inner">
+            <a class="brand" href="index.html" aria-label="MINES SPACE, home">
+                <img class="brand__mark" src="../assets/img/logo-ms-mark.png" alt="" width="533" height="315" />
+                <span class="brand__name">MINES SPACE</span>
+            </a>
+            <nav class="site-nav__panel" id="nav-panel" aria-label="Main navigation">
+                <ul class="site-nav__links">
+                    <li><a href="index.html#equipe">Team</a></li>
+                    <li><a href="index.html#historique" aria-current="true">Missions</a></li>
+                    <li><a href="index.html#galerie">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
             </nav>
+            <div class="site-nav__tools">
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <a href="../fr/ms0-result.html" lang="fr" hreflang="fr">FR</a>
+                    <a href="ms0-result.html" lang="en" aria-current="true">EN</a>
+                </div>
+                <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+                    <svg class="theme-toggle__moon" aria-hidden="true"><use href="#i-moon"/></svg>
+                    <svg class="theme-toggle__sun" aria-hidden="true"><use href="#i-sun"/></svg>
+                </button>
+                <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-controls="nav-panel" aria-expanded="false" aria-label="Open menu">
+                    <svg aria-hidden="true"><use href="#i-menu"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
 
-            <!-- Masthead-->
-            <header class="masthead">
-        </header>
-
-        <section class="page-section" id="results">
+    <main id="contenu">
+        <section class="page-head" aria-labelledby="page-title">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Results of the mission</h2>
-                    <h3 class="section-heading text-uppercase">Summary</h3>
-                    <p class="text-center text-muted">
-                        Find below some results of the MARSAUT 0 mission.</br>
-                        All definition documents and results are available for <a href="#downloads">download</a>.</br>
-                        You can also find the <a class="btn btn-primary btn-x1 text-uppercase" href="https://drive.google.com/file/d/1vlVH-qUqpxRJAFu-r5RVXr4vFLX1Npae/view?usp=sharing" target="_blank">MISSION REPORT (🇫🇷)</a>
-                    </p>
-
-                    <div class="sketchfab-embed-wrapper text-center"> <iframe style="min-height: 350px; width:80%;" title="Marsaut 0 - fusex" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/7a6c3129f2d44891bfc92a4b15ab961e/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/marsaut-0-fusex-7a6c3129f2d44891bfc92a4b15ab961e?utm_medium=embed&utm_campaign=share-popup&utm_content=7a6c3129f2d44891bfc92a4b15ab961e" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Marsaut 0 - fusex </a> by <a href="https://sketchfab.com/paulboymond?utm_medium=embed&utm_campaign=share-popup&utm_content=7a6c3129f2d44891bfc92a4b15ab961e" target="_blank" style="font-weight: bold; color: #1CAAD9;"> paulboymond </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=7a6c3129f2d44891bfc92a4b15ab961e" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
-                    </br>
-                    
-                    <h3 class="section-heading text-uppercase">Temperature and pressure</h3>
+                <a class="back-link" href="index.html#historique"><svg aria-hidden="true"><use href="#i-arrow"/></svg>Back to missions</a>
+                <div class="page-head__grid">
                     <div>
-                        <canvas id="temp_press" style="height: 500px"></canvas>
+                        <p class="eyebrow">Flight results · FUSEX · C’Space 2021</p>
+                        <h1 class="page-head__title" id="page-title">MARSAUT 0</h1>
+                        <p class="lead">The first MINES SPACE rocket: a single-stage FUSEX launched on 22 July 2021, which transmitted its flight parameters in real time over LoRa telemetry.</p>
                     </div>
+                    <img class="page-head__patch" src="../assets/img/portfolio/logo-marsaut.png" alt="MARSAUT 0 mission patch" width="400" height="300" />
+                </div>
+                <dl class="detail__facts">
+                    <div><dt>Campaign</dt><dd>C’Space 2021</dd></div>
+                    <div><dt>Launch</dt><dd>22-07-2021</dd></div>
+                    <div><dt>Result</dt><dd>Flight data published</dd></div>
+                    <div><dt>Motor</dt><dd>Pro 54</dd></div>
+                    <div><dt>Structure</dt><dd>Single stage, load-bearing truss, aluminium skin</dd></div>
+                    <div><dt>Experiment</dt><dd>868&nbsp;MHz LoRa telemetry and ground station</dd></div>
+                </dl>
+            </div>
+        </section>
 
-                    </br><hr>
-
-                    <h3 class="section-heading text-uppercase">Accelerometer data</h3>
-                    <p class="text-center text-muted"></p>
-                    <div>
-                        <canvas id="acc" style="height: 500px"></canvas>
-                    </div>
-
-                    </br><hr>
-
-                    <h3 class="section-heading text-uppercase">Gyro data</h3>
-                    <p class="text-center text-muted"></p>
-                    <div>
-                        <canvas id="gyr" style="height: 500px"></canvas>
-                    </div>
+        <section class="section section--alt" aria-labelledby="charts-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="eyebrow">Data measured in flight</p>
+                    <h2 class="section-title" id="charts-title">Flight curves</h2>
+                    <p class="lead">Measurements recorded by the onboard sensors, against time since the start of acquisition.</p>
+                </header>
+                <div class="charts">
+                    <article class="chart-card">
+                        <h3>Temperature and pressure</h3>
+                        <p>Temperature in °C (left axis) and atmospheric pressure in hPa (right axis).</p>
+                        <div class="chart-box"><canvas id="chart-temp-press" aria-label="Chart of temperature and pressure during the flight"></canvas></div>
+                    </article>
+                    <article class="chart-card">
+                        <h3>Accelerometers</h3>
+                        <p>Acceleration on the X, Y and Z axes, in g.</p>
+                        <div class="chart-box"><canvas id="chart-acc" aria-label="Chart of acceleration on three axes"></canvas></div>
+                    </article>
+                    <article class="chart-card">
+                        <h3>Gyrometers</h3>
+                        <p>Rotation rate on the X, Y and Z axes, in rad/s.</p>
+                        <div class="chart-box"><canvas id="chart-gyr" aria-label="Chart of rotation rate on three axes"></canvas></div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section class="page-section bg-light" id="downloads">
+        <section class="section" aria-labelledby="docs-title">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Downloads</h2>
-                    <h3 class="section-subheading text-muted">Find below all our data available for download.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <h4 class="my-3">Mission statement</h4>
-                        <p class="text-muted">
-                            <a class="btn btn-primary btn-x1 text-uppercase" href="https://www.canva.com/design/DAEgsehDpUs/iF5JxgfauaiTlDjdnY671A/view?utm_content=DAEgsehDpUs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank">PDF</a>
-                    </div>
-                    <div class="col-md-4">
-                        <h4 class="my-3">Electronic schematics</h4>
-                        <p class="text-muted">
-                            <a class="btn btn-primary btn-x1 text-uppercase" href="https://github.com/MinesSpace/Avionic_Marsaut_0" target="_blank">GitHub</a>
-                    </div>
-                    <div class="col-md-4">
-                        <h4 class="my-3">Flight software</h4>
-                        <p class="text-muted">
-                            <a class="btn btn-primary btn-x1 text-uppercase" target="_blank">Cooming soon!</a>
-                    </div>
-                    <div class="col-md-4">
-                        <h4 class="my-3">Ground station software</h4>
-                        <p class="text-muted">
-                            <a class="btn btn-primary btn-x1 text-uppercase" href="https://github.com/MinesSpace/MSGround" target="_blank">GitHub</a>
-                    </div>
-                    <div class="col-md-4">
-                        <h4 class="my-3">Raw results</h4>
-                        <p class="text-muted">
-                            <a class="btn btn-primary btn-x1 text-uppercase" href="../assets/DATALOG.txt" download>TXT</a>
-                    </div>
-                    <div class="col-md-4">
-                        <h4 class="my-3">Mission report (🇫🇷)</h4>
-                        <p class="text-muted">
-                            <a class="btn btn-primary btn-x1 text-uppercase" href="https://drive.google.com/file/d/1vlVH-qUqpxRJAFu-r5RVXr4vFLX1Npae/view?usp=sharing" target="_blank">PDF</a>
-                    </div>
-                    <div class="col-md-4 offset-4">
-                        <h4 class="my-3">Mechanics</h4>
-                        <p class="text-muted">
-                            <a class="btn btn-primary btn-x1 text-uppercase" href="https://grabcad.com/library/marsaut-0-1" target="_blank">GRABCAD</a>
-                    </div>
-                </div>
+                <header class="section-head">
+                    <p class="eyebrow">Documents</p>
+                    <h2 class="section-title" id="docs-title">Further reading</h2>
+                </header>
+                <ul class="docs">
+                    <li class="doc">
+                        <h3>Mission report</h3>
+                        <p>The full account of the project and the flight.</p>
+                        <a class="btn btn--primary" href="https://drive.google.com/file/d/17PJa4Hc0PvfgN_OFPRNejJ7FbC2fhY7Q/view?usp=sharing" target="_blank" rel="noopener">Open the PDF <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                    </li>
+                    <li class="doc">
+                        <h3>Design document</h3>
+                        <p>How the rocket was designed, before the flight.</p>
+                        <a class="btn btn--ghost" href="../assets/docs/marsaut0-document-de-definition.pdf" target="_blank" rel="noopener">Open the PDF <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                    </li>
+                    <li class="doc">
+                        <h3>Mission presentation</h3>
+                        <p>The project presentation slides.</p>
+                        <a class="btn btn--ghost" href="https://www.canva.com/design/DAEeiIS5EGs/ZGhcAlWXTmYD2dm_5rFAlQ/view?utm_content=DAEeiIS5EGs&amp;utm_campaign=designshare&amp;utm_medium=link&amp;utm_source=sharebutton" target="_blank" rel="noopener">View the presentation <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                    </li>
+                    <li class="doc">
+                        <h3>Raw data</h3>
+                        <p>The complete log file, as plain text.</p>
+                        <a class="btn btn--ghost" href="../assets/DATALOG.txt" download>Download the TXT</a>
+                    </li>
+                    <li class="doc">
+                        <h3>3D model</h3>
+                        <p>The rocket in 3D, viewable online.</p>
+                        <a class="btn btn--ghost" href="https://sketchfab.com/3d-models/marsaut-0-fusex-7a6c3129f2d44891bfc92a4b15ab961e" target="_blank" rel="noopener">View on Sketchfab <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                    </li>
+                    <li class="doc">
+                        <h3>Mechanical design</h3>
+                        <p>The CAD files of the structure.</p>
+                        <a class="btn btn--ghost" href="https://grabcad.com/library/marsaut-0-1" target="_blank" rel="noopener">View on GrabCAD <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                    </li>
+                </ul>
             </div>
         </section>
+    </main>
 
-        <!-- Footer-->
-        <footer class="footer py-4 bg-secondary">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left">Copyright © Mines Space 2023</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <ul class="list-inline">
-                            <li>
-                                <a class="btn btn-dark btn-social mx-2" href="https://github.com/MinesSpace" target="_blank"><i class="fab fa-github"></i></a>
-                                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/MinesSpace" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/mines-space/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/mines_space/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-dark btn-social mx-2" href=""><i class="fas fa-envelope"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a class="brand" href="index.html" aria-label="MINES SPACE, home">
+                    <img class="brand__mark" src="../assets/img/logo-ms-mark.png" alt="" width="533" height="315" loading="lazy" />
+                    <span class="brand__name">MINES SPACE</span>
+                </a>
+                <p>Student space association of the École des Mines de Saint-Étienne.</p>
+                <p class="footer__mail"><a href="mailto:minesspace.asso@gmail.com">minesspace.asso@gmail.com</a></p>
             </div>
-        </footer>
+            <div class="footer__col">
+                <p class="footer__title">Social</p>
+                <ul class="footer__socials">
+                    <li><a class="social-link" href="https://www.linkedin.com/company/mines-space/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+                    <li><a class="social-link" href="https://www.instagram.com/mines_space/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+                    <li><a class="social-link" href="https://www.facebook.com/MinesSpace" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-facebook"/></svg></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer__legal">
+            <p>
+                <span>© MINES SPACE 2019 – 2026</span>
+                <button class="footer__link" type="button" data-consent-open>Manage cookies</button>
+            </p>
+        </div>
+    </footer>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Chart JS -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script type="text/javascript" src="../js/ms0-data.js"></script>
-        <script type="text/javascript" src="../js/ms0-charts.js"></script>
-        <!-- Core theme JS-->
-        <script src="../js/scripts.js"></script>
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <script src="../js/ms0-data.js"></script>
+    <script src="../js/flight-results.js"></script>
+    <script src="../js/main.js" defer></script>
+</body>
 </html>

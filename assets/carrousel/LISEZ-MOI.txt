@@ -1,0 +1,43 @@
+MINES SPACE - PHOTOS DU CARROUSEL
+=================================
+
+Ce dossier contient les photos qui défilent dans la section « Galerie » du site
+(versions française et anglaise). Aucun code à modifier : il suffit de déposer
+les photos ici, sur GitHub.
+
+
+AJOUTER UNE PHOTO
+-----------------
+1. Sur GitHub, ouvrez ce dossier (assets/carrousel), cliquez sur
+   « Add file » > « Upload files », déposez la photo, puis « Commit changes ».
+
+2. Nommez la photo ainsi (renommez-la AVANT de la déposer) :
+
+       NN - Légende en français = Caption in English.jpg
+
+   - NN fixe l'ordre d'affichage : 01, 02, 03… (les plus petits numéros d'abord) ;
+   - le texte avant « = » s'affiche sur le site français ;
+   - le texte après « = » s'affiche sur le site anglais.
+     Il est facultatif : sans « = », la légende française est utilisée partout.
+
+   Exemple :
+       15 - Décollage de VESPERA, C'Space 2027 = VESPERA lift-off, C'Space 2027.jpg
+
+3. C'est tout : la photo apparaît sur le site dans les minutes qui suivent
+   (le temps que GitHub publie le site ; rechargez la page si besoin).
+
+
+RETIRER OU RENOMMER UNE PHOTO
+-----------------------------
+Supprimez ou renommez le fichier dans ce dossier, sur GitHub.
+
+
+CONSEILS
+--------
+- Formats acceptés : .jpg, .jpeg, .png, .webp, .gif
+- Taille conseillée : 1600 pixels maximum sur le plus grand côté, moins de 500 Ko
+  (les photos trop lourdes ralentissent le site, surtout sur téléphone).
+- Caractères interdits dans les noms de fichiers : / \ : * ? " < > |
+- Le fichier photos.js de ce dossier est une liste de secours (site ouvert en
+  local, ou GitHub indisponible). Vous n'avez pas besoin d'y toucher. Pour le
+  remettre à jour depuis un ordinateur : « outils/Mettre a jour le carrousel.bat ».

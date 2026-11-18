@@ -1,1165 +1,1050 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Mines Space - The space association of Mines Saint Etienne school." />
-        <meta name="author" content="Mines Space" />
-        <meta name="google-site-verification" content="7t-uLKByJ_xhqpCq4-QCEBxVagRk8Dj_m0aSfEMAF_k" />
-        <title>Mines Space</title>
-        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../css/styles.css" rel="stylesheet" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MINES SPACE</title>
+    <meta name="description" content="MINES SPACE, the student space association of the École des Mines de Saint-Étienne: designing and launching experimental rockets (Minif, FUSEX) at the CNES C'Space campaign." />
+    <meta name="author" content="MINES SPACE" />
+    <meta name="theme-color" content="#f7f6f9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e0d12" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href="https://minesspace.fr/en/index.html" />
+    <link rel="alternate" hreflang="fr" href="https://minesspace.fr/" />
+    <link rel="alternate" hreflang="en" href="https://minesspace.fr/en/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MINES SPACE" />
+    <meta property="og:description" content="The space association of the École des Mines de Saint-Étienne: students who design, build and launch rockets at C'Space." />
+    <meta property="og:image" content="https://minesspace.fr/assets/img/hero-rocket.jpg" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LN1GFX018X"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <!-- Theme before first paint: stored choice, otherwise system preference -->
+    <script>
+        (function () {
+            var root = document.documentElement, theme = null;
+            root.classList.add('js');
+            try { theme = localStorage.getItem('ms-theme'); } catch (e) {}
+            if (theme !== 'light' && theme !== 'dark') {
+                theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            root.setAttribute('data-theme', theme);
+        })();
+    </script>
 
-            gtag('config', 'G-LN1GFX018X');
-        </script>
-    </head>
-    <body id="index-en">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#index-en"><img src="../assets/img/navbar-logo.svg" alt="" /></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ml-1"></i>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+
+    <!-- Google Analytics, subject to consent (see js/analytics.js) -->
+    <script src="../js/analytics.js"></script>
+</head>
+<body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <defs>
+            <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+            <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+            <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+            <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+            <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+            <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+            <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+            <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+            <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+            <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+            <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+            <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></symbol>
+            <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10-6.5z"/></symbol>
+            <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+            <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+            <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+        </defs>
+    </svg>
+
+    <a class="skip-link" href="#contenu">Skip to content</a>
+
+    <!-- Consent banner: centred, shown until a choice is made (see js/main.js) -->
+    <div class="consent-layer" id="consent" hidden>
+        <div class="consent" role="dialog" aria-modal="true" aria-labelledby="consent-title" aria-describedby="consent-text">
+            <p class="consent__title" id="consent-title">Audience measurement cookies</p>
+            <p class="consent__text" id="consent-text">With your consent, we use Google Analytics to measure traffic on this site. No advertising. You can change your mind at any time via “Manage cookies” at the bottom of the page.</p>
+            <div class="consent__actions">
+                <button class="consent__btn" type="button" data-consent="deny">Decline</button>
+                <button class="consent__btn" type="button" data-consent="accept">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header class="site-nav" data-nav>
+        <div class="container site-nav__inner">
+            <a class="brand" href="#accueil" aria-label="MINES SPACE, back to top">
+                <img class="brand__mark" src="../assets/img/logo-ms-mark.png" alt="" width="533" height="315" />
+                <span class="brand__name">MINES SPACE</span>
+            </a>
+
+            <nav class="site-nav__panel" id="nav-panel" aria-label="Main navigation">
+                <ul class="site-nav__links">
+                    <li><a href="#equipe" data-spy="equipe">Team</a></li>
+                    <li><a href="#historique" data-spy="historique">Missions</a></li>
+                    <li><a href="#galerie" data-spy="galerie">Gallery</a></li>
+                    <li><a href="#contact" data-spy="contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="site-nav__tools">
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <a href="../index.html" lang="fr" hreflang="fr">FR</a>
+                    <a href="index.html" lang="en" aria-current="true">EN</a>
+                </div>
+                <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+                    <svg class="theme-toggle__moon" aria-hidden="true"><use href="#i-moon"/></svg>
+                    <svg class="theme-toggle__sun" aria-hidden="true"><use href="#i-sun"/></svg>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#association">The association</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Our projects</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">The team</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#partner">Partners</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#history">History</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact-section">Contact</a></li> 
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">🇫🇷</a></li>
+                <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-controls="nav-panel" aria-expanded="false" aria-label="Open menu">
+                    <svg aria-hidden="true"><use href="#i-menu"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="contenu">
+
+        <!-- ============ HOME ============ -->
+        <section class="hero" id="accueil" aria-labelledby="hero-title">
+            <img class="hero__img hero__img--light" src="../assets/img/hero-fusee-jour.jpg" alt="" width="2000" height="1332" fetchpriority="high" decoding="async" />
+            <img class="hero__img hero__img--dark" src="../assets/img/hero-trajectoire-nuit.jpg" alt="" width="2000" height="1332" decoding="async" />
+            <div class="container hero__inner">
+                <p class="eyebrow hero__eyebrow" style="--i:0">Space association · École des Mines de Saint-Étienne</p>
+                <h1 class="hero__title" id="hero-title" style="--i:1">MINES SPACE</h1>
+                <p class="hero__lead" style="--i:2">
+                    The association has been designing experimental rockets since 2019 and launches them at C’Space,
+                    the national campaign run by CNES with Planète Sciences.
+                </p>
+                <div class="hero__actions" style="--i:3">
+                    <a class="btn btn--primary" href="#historique">Discover our rockets <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                    <a class="btn btn--ghost" href="#contact">Contact us</a>
+                </div>
+            </div>
+            <div class="container">
+                <dl class="spec-strip" style="--i:4">
+                    <div><dt>Founded in</dt><dd>2019</dd></div>
+                    <div><dt>Categories</dt><dd>Minif · FUSEX</dd></div>
+                    <div><dt>Launches</dt><dd>C’Space · CNES</dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ============ 01 · TEAM ============ -->
+        <section class="section" id="equipe" aria-labelledby="equipe-title">
+            <div class="container">
+                <header class="section-head" data-reveal>
+                    <p class="eyebrow"><span class="eyebrow__num">01</span> The team</p>
+                    <h2 class="section-title" id="equipe-title">Our team</h2>
+                </header>
+
+                <div class="team-block">
+                    <h3 class="team-block__title" data-reveal>Current board <span class="team-block__year">2026 – 2027</span></h3>
+                    <ul class="board" data-reveal-group>
+                        <li class="member" data-reveal>
+                            <img class="member__photo" src="../assets/img/team/theovincent.jpg" alt="Portrait of Theo Vincent" width="600" height="600" loading="lazy" decoding="async" />
+                            <div class="member__text">
+                                <p class="member__role">President</p>
+                                <h4 class="member__name">Theo Vincent</h4>
+                                <p class="member__project">ASTRA 1 project</p>
+                                <a class="social-link" href="https://www.linkedin.com/in/th%C3%A9o-vincent-0b4609253/" target="_blank" rel="noopener" aria-label="Theo Vincent on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+                            </div>
+                        </li>
+                        <li class="member" data-reveal>
+                            <img class="member__photo" src="../assets/img/team/eliottfavard.jpg" alt="Portrait of Eliott Favard" width="600" height="600" loading="lazy" decoding="async" />
+                            <div class="member__text">
+                                <p class="member__role">Treasurer</p>
+                                <h4 class="member__name">Eliott Favard</h4>
+                                <p class="member__project">ASTRA 1 project</p>
+                                <a class="social-link" href="https://www.linkedin.com/in/eliott-favard-577b122a2/" target="_blank" rel="noopener" aria-label="Eliott Favard on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="team-block" id="saison">
+                    <div class="season__card" data-reveal>
+                        <div class="season__intro">
+                            <p class="eyebrow">2026 – 2027 season</p>
+                            <h3 class="season__title">Current projects</h3>
+                            <p class="season__stat"><strong>30</strong> active members</p>
+                        </div>
+                        <dl class="season__projects">
+                            <div class="season__row">
+                                <dt>1 FUSEX</dt>
+                                <dd><ul class="season__list"><li>VESPERA</li></ul></dd>
+                            </div>
+                            <div class="season__row">
+                                <dt>4 Minifs</dt>
+                                <dd>
+                                    <ul class="season__list">
+                                        <li>Domin’space</li>
+                                        <li>ATHENA</li>
+                                        <li>Minecarus</li>
+                                        <li>Rocket League</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+
+                <details class="team-block alumni-panel" data-reveal>
+                    <summary class="alumni-panel__summary">
+                        <h3 class="alumni-panel__title">Former members <span class="alumni-panel__count">16</span></h3>
+                        <span class="alumni-panel__hint">
+                            <span class="alumni-panel__hint-closed">Show</span>
+                            <span class="alumni-panel__hint-open">Hide</span>
+                            <svg aria-hidden="true"><use href="#i-chevron-down"/></svg>
+                        </span>
+                    </summary>
+                    <ul class="alumni">
+                        <li class="alum">
+                            <img src="../assets/img/team/antoninbonneau.jpg" alt="" width="400" height="400" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Antonin Bonneau</strong><span class="alum__role alum__role--lead">President · 2025 – 2026</span><span>Fourneyron &amp; Apogée</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/antonin-bonneau-b9562b332/" target="_blank" rel="noopener" aria-label="Antonin Bonneau on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/quentinliogier.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Quentin Liogier</strong><span class="alum__role alum__role--lead">Treasurer · 2025 – 2026</span><span>Fourneyron &amp; Apogée</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/quentin-liogier-2b1997228/" target="_blank" rel="noopener" aria-label="Quentin Liogier on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/matthiascalmes.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Matthias Calmes</strong><span class="alum__role">Member · 2025 – 2026</span><span>Fourneyron &amp; Apogée</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/calmes-matthias/" target="_blank" rel="noopener" aria-label="Matthias Calmes on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/gaelkandel.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Gaël Kandel</strong><span class="alum__role">Member · 2025 – 2026</span><span>Marianne 6</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/ga%C3%ABl-kandel-739575197/" target="_blank" rel="noopener" aria-label="Gaël Kandel on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/thomasjourdan.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Thomas Jourdan</strong><span class="alum__role">Member · 2025 – 2026</span><span>Marianne 6</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/thomas-jourdan-inge/" target="_blank" rel="noopener" aria-label="Thomas Jourdan on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/quentinhusson.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Quentin Husson</strong><span class="alum__role">Member</span><span>Fuséebulon &amp; Prometheus</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/quentin-husson-3a9a56275/" target="_blank" rel="noopener" aria-label="Quentin Husson on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/erwinmartin.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Erwin Martin</strong><span class="alum__role">Member</span><span>Fuséebulon &amp; Prometheus</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/erwin-martin/" target="_blank" rel="noopener" aria-label="Erwin Martin on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/malodourdain.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Malo Dourdain</strong><span class="alum__role">Member</span><span>Fuséebulon &amp; Prometheus</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/malo-dourdain-545867253/" target="_blank" rel="noopener" aria-label="Malo Dourdain on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/evannkurzawa.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Evann Kurzawa</strong><span class="alum__role">Member</span><span>Epsiᒧᒪon &amp; Epsiᒧᒪon 2</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/evann-kurzawa-57089224b/" target="_blank" rel="noopener" aria-label="Evann Kurzawa on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/aldricparent.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Aldric Parent</strong><span class="alum__role">Member</span><span>Epsiᒧᒪon &amp; Epsiᒧᒪon 2</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/aldric-parent-1a33211a8/" target="_blank" rel="noopener" aria-label="Aldric Parent on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/paulm.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Paul Miailhe</strong><span class="alum__role alum__role--lead">President · 2019 – 2022</span><span>MARSAUT 0, MARSAUT 1 &amp; MSE</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/paul-miailhe-741272156/" target="_blank" rel="noopener" aria-label="Paul Miailhe on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/paulb.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Paul Boymond</strong><span class="alum__role alum__role--lead">Treasurer · 2019 – 2022</span><span>MARSAUT 0, MARSAUT 1 &amp; MSE</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/paul-boymond-a4a701195/" target="_blank" rel="noopener" aria-label="Paul Boymond on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/quentin.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Quentin Bakrim</strong><span class="alum__role">Member</span><span>MARSAUT 0, MARSAUT 1 &amp; MSE</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/quentin-bakrim/" target="_blank" rel="noopener" aria-label="Quentin Bakrim on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/arthur.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Arthur Chassande</strong><span class="alum__role">Member</span><span>MARSAUT 0 &amp; MARSAUT 1</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/arthur-chassande-a1a009173/" target="_blank" rel="noopener" aria-label="Arthur Chassande on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/sixtine.jpg" alt="" width="180" height="180" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Sixtine Peniguel</strong><span class="alum__role">Member</span><span>MARSAUT 0 &amp; MARSAUT 1</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/sixtine-peniguel-b60452170/" target="_blank" rel="noopener" aria-label="Sixtine Peniguel on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                        <li class="alum">
+                            <img src="../assets/img/team/sm/enzo.jpg" alt="" width="192" height="192" loading="lazy" decoding="async" />
+                            <div class="alum__text"><strong>Enzo Picas</strong><span class="alum__role">Member</span><span>Website development</span></div>
+                            <div class="alum__links"><a class="social-link" href="https://www.linkedin.com/in/enzo-picas/" target="_blank" rel="noopener" aria-label="Enzo Picas on LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></div>
+                        </li>
+                    </ul>
+                </details>
+            </div>
+        </section>
+
+        <!-- ============ 02 · MISSIONS ============
+             Same pattern for every mission (see the French version for details). -->
+        <section class="section section--alt" id="historique" aria-labelledby="historique-title">
+            <div class="container">
+                <header class="section-head section-head--split" data-reveal>
+                    <div>
+                        <p class="eyebrow"><span class="eyebrow__num">02</span> Missions</p>
+                        <h2 class="section-title" id="historique-title">Our rockets, mission after mission</h2>
+                        <p class="lead">From a first FUSEX in 2021 to five projects running in parallel today. Click a mission to open its sheet.</p>
+                    </div>
+                    <div class="filter" role="group" aria-label="Filter missions by category">
+                        <button type="button" class="filter__btn" data-filter="all" aria-pressed="true">All <span class="filter__count">10</span></button>
+                        <button type="button" class="filter__btn" data-filter="fusex" aria-pressed="false">FUSEX <span class="filter__count">5</span></button>
+                        <button type="button" class="filter__btn" data-filter="minif" aria-pressed="false">Minif <span class="filter__count">5</span></button>
+                    </div>
+                </header>
+
+                <div class="cycle-legend" data-reveal>
+                    <p class="cycle-legend__label">Every mission follows the C’Space cycle</p>
+                    <ol class="cycle-legend__steps">
+                        <li><strong>RCE 1</strong><span>October</span></li>
+                        <li><strong>RCE 2</strong><span>February</span></li>
+                        <li><strong>RCE 3</strong><span>June</span></li>
+                        <li class="is-launch"><strong>Launch</strong><span>July · Tarbes military base</span></li>
+                    </ol>
+                </div>
+
+                <ol class="timeline">
+
+                    <li class="timeline__year timeline__year--current" data-reveal>
+                        <div class="timeline__label">
+                            <span class="timeline__date">2026 – 2027</span>
+                            <span class="timeline__status">In progress</span>
+                        </div>
+                        <div class="timeline__content">
+                            <ul class="timeline__current">
+                                <li><span class="timeline__cat">FUSEX</span>VESPERA</li>
+                                <li><span class="timeline__cat">Minif</span>Domin’space</li>
+                                <li><span class="timeline__cat">Minif</span>ATHENA</li>
+                                <li><span class="timeline__cat">Minif</span>Minecarus</li>
+                                <li><span class="timeline__cat">Minif</span>Rocket League</li>
+                            </ul>
+                            <p class="timeline__note">30 active members · <a href="#equipe">see the current board</a></p>
+                        </div>
+                    </li>
+
+                    <!-- 2026 -->
+                    <li class="timeline__year" data-reveal>
+                        <div class="timeline__label"><span class="timeline__date">2026</span></div>
+                        <ul class="timeline__missions">
+                            <li class="mission card-hit" data-category="minif">
+                                <img class="mission__patch" src="../assets/img/portfolio/logo-astra1.jpg" alt="" width="1200" height="896" loading="lazy" decoding="async" />
+                                <div class="mission__body">
+                                    <p class="meta">Minif · C’Space 2026</p>
+                                    <h3 class="mission__title"><button class="card-hit__btn" type="button" data-dialog-open aria-haspopup="dialog">ASTRA 1</button></h3>
+                                    <p class="mission__fact">Team of 4 members</p>
+                                </div>
+                                <svg class="mission__chevron" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+                                <template data-detail>
+                                    <header class="detail__head">
+                                        <img class="detail__patch" src="../assets/img/portfolio/logo-astra1.jpg" alt="" width="1200" height="896" />
+                                        <div>
+                                            <p class="meta">Minif (mini-rocket) · C’Space 2026</p>
+                                            <h2 class="detail__title" id="dialog-title">ASTRA 1</h2>
+                                            <p class="detail__lead">A mini-rocket powered by a Pandora motor, for the July&nbsp;2026 C’Space campaign.</p>
+                                        </div>
+                                    </header>
+                                    <h3 class="detail__subtitle">The mission</h3>
+                                    <div class="detail__body">
+                                        <p>ASTRA 1 is a MINIF, a mini-rocket fully designed, built and integrated by MINES SPACE students for C’Space, the national launch campaign run by CNES with Planète Sciences. It carries two electronic boards: one for sequencing, the other for the experiment.</p>
+                                    </div>
+                                    <h3 class="detail__subtitle">Technical sheet</h3>
+                                    <dl class="detail__facts">
+                                        <div><dt>Campaign</dt><dd>C’Space 2026</dd></div>
+                                        <div><dt>Launch</dt><dd>07-2026</dd></div>
+                                        <div><dt>Result</dt><dd>Ballistic flight</dd></div>
+                                        <div><dt>Motor</dt><dd>Pandora</dd></div>
+                                        <div><dt>Structure</dt><dd>PVC tube, 4 aluminium fins</dd></div>
+                                        <div><dt>Experiment</dt><dd>Accelerometer and on-board camera</dd></div>
+                                    </dl>
+                                    <h3 class="detail__subtitle">Project team</h3>
+                                    <ul class="crew">
+                                        <li><img src="../assets/img/team/theovincent.jpg" alt="" width="600" height="600" /><span><strong>Theo Vincent</strong>President of the association</span></li>
+                                        <li><img src="../assets/img/team/eliottfavard.jpg" alt="" width="600" height="600" /><span><strong>Eliott Favard</strong>Treasurer of the association</span></li>
+                                        <li><span class="crew__initials" aria-hidden="true">JP</span><span><strong>Jorian Pateau</strong>Member</span></li>
+                                        <li><span class="crew__initials" aria-hidden="true">GR</span><span><strong>Gaetan Roux</strong>Member</span></li>
+                                    </ul>
+                                    <h3 class="detail__subtitle">Documents</h3>
+                                    <div class="detail__actions">
+                                        <span class="btn btn--ghost is-disabled" aria-disabled="true">Mission report <small>· not available yet</small></span>
+                                    </div>
+                                </template>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 2025 -->
+                    <li class="timeline__year" data-reveal>
+                        <div class="timeline__label"><span class="timeline__date">2025</span></div>
+                        <ul class="timeline__missions">
+                            <li class="mission card-hit" data-category="minif">
+                                <img class="mission__patch" src="../assets/img/portfolio/logo-fourneyron-800.jpg" alt="" width="800" height="600" loading="lazy" decoding="async" />
+                                <div class="mission__body">
+                                    <p class="meta">Minif · C’Space 2025</p>
+                                    <h3 class="mission__title"><button class="card-hit__btn" type="button" data-dialog-open aria-haspopup="dialog">Fourneyron</button></h3>
+                                    <p class="mission__fact">Team of 3 members</p>
+                                </div>
+                                <svg class="mission__chevron" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+                                <template data-detail>
+                                    <header class="detail__head">
+                                        <img class="detail__patch" src="../assets/img/portfolio/logo-fourneyron-800.jpg" alt="" width="800" height="600" />
+                                        <div>
+                                            <p class="meta">Minif (mini-rocket) · C’Space 2025</p>
+                                            <h2 class="detail__title" id="dialog-title">Fourneyron</h2>
+                                            <p class="detail__lead">A mini-rocket launched at C’Space in July 2025, with a nominal flight.</p>
+                                        </div>
+                                    </header>
+                                    <h3 class="detail__subtitle">The mission</h3>
+                                    <div class="detail__body">
+                                        <p>Fourneyron is a Minif designed and built during the 2024-2025 academic year, from September 2024 to July 2025.</p>
+                                    </div>
+                                    <h3 class="detail__subtitle">Technical sheet</h3>
+                                    <dl class="detail__facts">
+                                        <div><dt>Campaign</dt><dd>C’Space 2025</dd></div>
+                                        <div><dt>Launch</dt><dd>07-2025</dd></div>
+                                        <div><dt>Result</dt><dd>Nominal flight</dd></div>
+                                        <div><dt>Motor</dt><dd>Pandora</dd></div>
+                                        <div><dt>Structure</dt><dd>PETG load-bearing truss with carbon rods, phenolic cardboard tube Ø&nbsp;54/57&nbsp;mm</dd></div>
+                                        <div><dt>Experiment</dt><dd>Apogee detection with a Pitot probe (differential pressure + barometer)</dd></div>
+                                    </dl>
+                                    <h3 class="detail__subtitle">Project team</h3>
+                                    <ul class="crew">
+                                        <li><img src="../assets/img/team/antoninbonneau.jpg" alt="" width="400" height="400" /><span><strong>Antonin Bonneau</strong>President 2025 – 2026</span></li>
+                                        <li><img src="../assets/img/team/sm/quentinliogier.jpg" alt="" width="192" height="192" /><span><strong>Quentin Liogier</strong>Treasurer 2025 – 2026</span></li>
+                                        <li><img src="../assets/img/team/sm/matthiascalmes.jpg" alt="" width="192" height="192" /><span><strong>Matthias Calmes</strong>Member</span></li>
+                                    </ul>
+                                    <h3 class="detail__subtitle">Documents</h3>
+                                    <div class="detail__actions">
+                                        <a class="btn btn--ghost" href="https://drive.google.com/file/d/1x-hCnFTbcxSc25TDlKY_Au2BTLm0UWHa/view?usp=sharing" target="_blank" rel="noopener">Mission report <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                                    </div>
+                                </template>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 2024 -->
+                    <li class="timeline__year" data-reveal>
+                        <div class="timeline__label"><span class="timeline__date">2024</span></div>
+                        <ul class="timeline__missions">
+                            <li class="mission card-hit" data-category="fusex">
+                                <img class="mission__patch" src="../assets/img/portfolio/logo-prometheus.png" alt="" width="1122" height="552" loading="lazy" decoding="async" />
+                                <div class="mission__body">
+                                    <p class="meta">FUSEX · C’Space 2024</p>
+                                    <h3 class="mission__title"><button class="card-hit__btn" type="button" data-dialog-open aria-haspopup="dialog">Prometheus</button></h3>
+                                    <p class="mission__fact">Team of 3 members</p>
+                                </div>
+                                <svg class="mission__chevron" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+                                <template data-detail>
+                                    <header class="detail__head">
+                                        <img class="detail__patch" src="../assets/img/portfolio/logo-prometheus.png" alt="" width="1122" height="552" />
+                                        <div>
+                                            <p class="meta">FUSEX (experimental rocket) · C’Space 2024</p>
+                                            <h2 class="detail__title" id="dialog-title">Prometheus</h2>
+                                            <p class="detail__lead">A 2.30&nbsp;m two-stage FUSEX, designed by the Fuséebulon team to go one step further: separate its stages in flight and ignite a second motor.</p>
+                                        </div>
+                                    </header>
+                                    <h3 class="detail__subtitle">The mission</h3>
+                                    <div class="detail__body">
+                                        <p>After Fuséebulon, the same team took on an active two-stage FUSEX: separate the stages in flight, then ignite the second motor. On board: a ball-lock separation system inspired by Bételgeuse, a pyrotechnic line with three safety levels, airbrakes and independent recovery for each stage.</p>
+                                    </div>
+                                    <h3 class="detail__subtitle">Technical sheet</h3>
+                                    <dl class="detail__facts">
+                                        <div><dt>Campaign</dt><dd>C’Space 2024</dd></div>
+                                        <div><dt>Launch</dt><dd>07-2024</dd></div>
+                                        <div><dt>Result</dt><dd>Ballistic flight</dd></div>
+                                        <div><dt>Motor</dt><dd>Pandora Pro 75-3G (Booster) + Pandora Pro 24-6G (Ship)</dd></div>
+                                        <div><dt>Structure</dt><dd>Two stages, 2.30&nbsp;m, Ø&nbsp;104&nbsp;mm, 9.2&nbsp;kg without motors; load-bearing truss and aluminium skin</dd></div>
+                                        <div><dt>Experiment</dt><dd>Stage separation and second-motor ignition</dd></div>
+                                    </dl>
+                                    <h3 class="detail__subtitle">Project team</h3>
+                                    <ul class="crew">
+                                        <li><img src="../assets/img/team/sm/malodourdain.jpg" alt="" width="192" height="192" /><span><strong>Malo Dourdain</strong>Electronics</span></li>
+                                        <li><img src="../assets/img/team/sm/quentinhusson.jpg" alt="" width="192" height="192" /><span><strong>Quentin Husson</strong>Machining and assembly</span></li>
+                                        <li><img src="../assets/img/team/sm/erwinmartin.jpg" alt="" width="192" height="192" /><span><strong>Erwin Martin</strong>3D modelling</span></li>
+                                    </ul>
+                                    <h3 class="detail__subtitle">Documents</h3>
+                                    <div class="detail__actions">
+                                        <a class="btn btn--ghost" href="https://drive.google.com/file/d/1HP94IPOl7JZm1eFHCRb60DDMMMm6RJvw/view?usp=drive_link" target="_blank" rel="noopener">Design document <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                                    </div>
+                                </template>
+                            </li>
+
+                            <li class="mission card-hit" data-category="minif">
+                                <img class="mission__patch" src="../assets/img/portfolio/logo-marianne6-400x300.png" alt="" width="400" height="300" loading="lazy" decoding="async" />
+                                <div class="mission__body">
+                                    <p class="meta">Minif · C’Space 2024</p>
+                                    <h3 class="mission__title"><button class="card-hit__btn" type="button" data-dialog-open aria-haspopup="dialog">Marianne 6</button></h3>
+                                    <p class="mission__fact">Team of 3 members</p>
+                                </div>
+                                <svg class="mission__chevron" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+                                <template data-detail>
+                                    <header class="detail__head">
+                                        <img class="detail__patch" src="../assets/img/portfolio/logo-marianne6.png" alt="" width="900" height="675" />
+                                        <div>
+                                            <p class="meta">Minif (mini-rocket) · C’Space 2024</p>
+                                            <h2 class="detail__title" id="dialog-title">Marianne 6</h2>
+                                            <p class="detail__lead">A mini-rocket launched in July 2024, which made a ballistic flight.</p>
+                                        </div>
+                                    </header>
+                                    <h3 class="detail__subtitle">The mission</h3>
+                                    <div class="detail__body">
+                                        <p>Marianne 6 compared the flight data measured by an inertial measurement unit and by a Pitot tube. The project ran from September 2023 to July 2024.</p>
+                                    </div>
+                                    <h3 class="detail__subtitle">Technical sheet</h3>
+                                    <dl class="detail__facts">
+                                        <div><dt>Campaign</dt><dd>C’Space 2024</dd></div>
+                                        <div><dt>Launch</dt><dd>07-2024</dd></div>
+                                        <div><dt>Result</dt><dd>Ballistic flight</dd></div>
+                                        <div><dt>Motor</dt><dd>Pandora</dd></div>
+                                        <div><dt>Structure</dt><dd>Load-bearing skin</dd></div>
+                                        <div><dt>Experiment</dt><dd>Inertial unit vs Pitot tube comparison</dd></div>
+                                    </dl>
+                                    <h3 class="detail__subtitle">Project team</h3>
+                                    <ul class="crew">
+                                        <li><img src="../assets/img/team/sm/gaelkandel.jpg" alt="" width="192" height="192" /><span><strong>Gaël Kandel</strong>Member</span></li>
+                                        <li><img src="../assets/img/team/sm/thomasjourdan.jpg" alt="" width="192" height="192" /><span><strong>Thomas Jourdan</strong>Member</span></li>
+                                        <li><img src="../assets/img/team/sm/romainbenoit.jpg" alt="" width="192" height="192" /><span><strong>Romain Benoit</strong>Member</span></li>
+                                    </ul>
+                                    <h3 class="detail__subtitle">Documents</h3>
+                                    <div class="detail__actions">
+                                        <a class="btn btn--ghost" href="https://drive.google.com/file/d/18U_2-tTQgnk464eRbKrLdMKi4GXPuK9i/view?usp=drive_link" target="_blank" rel="noopener">Design document <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                                    </div>
+                                </template>
+                            </li>
+
+                            <li class="mission card-hit" data-category="fusex">
+                                <img class="mission__patch" src="../assets/img/portfolio/logo-epsijlon2.png" alt="" width="1122" height="552" loading="lazy" decoding="async" />
+                                <div class="mission__body">
+                                    <p class="meta">FUSEX · Spaceport America Cup 2024</p>
+                                    <h3 class="mission__title"><button class="card-hit__btn" type="button" data-dialog-open aria-haspopup="dialog">Epsiᒧᒪon 2</button></h3>
+                                    <p class="mission__fact">Team of 2 members</p>
+                                </div>
+                                <svg class="mission__chevron" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+                                <template data-detail>
+                                    <header class="detail__head">
+                                        <img class="detail__patch" src="../assets/img/portfolio/logo-epsijlon2.png" alt="" width="1122" height="552" />
+                                        <div>
+                                            <p class="meta">FUSEX (experimental rocket) · Spaceport America Cup 2024</p>
+                                            <h2 class="detail__title" id="dialog-title">Epsiᒧᒪon 2</h2>
+                                            <p class="detail__lead">Epsiᒧᒪon’s successor in the FUSEX category, started in September 2023.</p>
+                                        </div>
+                                    </header>
+                                    <h3 class="detail__subtitle">The mission</h3>
+                                    <div class="detail__body">
+                                        <p>Epsiᒧᒪon 2 was launched in June 2024 at the Spaceport America Cup (IREC), a competition that brings together more than 1,700 students in New Mexico. The project received a 2023 Space Grant (Bourse Espace) from the Fondation Ailes de France.</p>
+                                    </div>
+                                    <h3 class="detail__subtitle">Technical sheet</h3>
+                                    <dl class="detail__facts">
+                                        <div><dt>Campaign</dt><dd>Spaceport America Cup 2024 (IREC)</dd></div>
+                                        <div><dt>Launch</dt><dd>06-2024</dd></div>
+                                        <div><dt>Result</dt><dd><span class="nc">Not provided</span></dd></div>
+                                        <div><dt>Motor</dt><dd>Aerotech M1315W-PS</dd></div>
+                                        <div><dt>Structure</dt><dd>Aluminium and polycarbonate</dd></div>
+                                        <div><dt>Experiment</dt><dd>Parachute hatch analysis</dd></div>
+                                    </dl>
+                                    <h3 class="detail__subtitle">Project team</h3>
+                                    <ul class="crew">
+                                        <li><img src="../assets/img/team/sm/evannkurzawa.jpg" alt="" width="192" height="192" /><span><strong>Evann Kurzawa</strong>Member</span></li>
+                                        <li><img src="../assets/img/team/sm/aldricparent.jpg" alt="" width="192" height="192" /><span><strong>Aldric Parent</strong>Member</span></li>
+                                    </ul>
+                                    <h3 class="detail__subtitle">Documents</h3>
+                                    <div class="detail__actions">
+                                        <a class="btn btn--ghost" href="https://drive.google.com/file/d/1oygwIaQ1mfM2fQ84rxPEd_04zNU5UHzU/view?usp=drive_link" target="_blank" rel="noopener">Design document <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                                    </div>
+                                </template>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 2023 -->
+                    <li class="timeline__year" data-reveal>
+                        <div class="timeline__label"><span class="timeline__date">2023</span></div>
+                        <ul class="timeline__missions">
+                            <li class="mission card-hit" data-category="fusex">
+                                <img class="mission__patch" src="../assets/img/portfolio/logo-mse.png" alt="" width="400" height="300" loading="lazy" decoding="async" />
+                                <div class="mission__body">
+                                    <p class="meta">FUSEX · C’Space 2023</p>
+                                    <h3 class="mission__title"><button class="card-hit__btn" type="button" data-dialog-open aria-haspopup="dialog">MSE</button></h3>
+                                    <p class="mission__fact">Team of 4 members</p>
+                                </div>
+                                <svg class="mission__chevron" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+                                <template data-detail>
+                                    <header class="detail__head">
+                                        <img class="detail__patch" src="../assets/img/portfolio/logo-mse.png" alt="" width="400" height="300" />
+                                        <div>
+                                            <p class="meta">FUSEX (experimental rocket) · C’Space 2023</p>
+                                            <h2 class="detail__title" id="dialog-title">MSE</h2>
+                                            <p class="detail__lead">MarSonique, known as MSE: a supersonic FUSEX.</p>
+                                        </div>
+                                    </header>
+                                    <h3 class="detail__subtitle">The mission</h3>
+                                    <div class="detail__body">
+                                        <p>This supersonic launcher reuses the tracking architecture developed for MARSAUT 0. The project ran from September 2022 to July 2023, with design reviews RCE 1 in October 2022, RCE 2 in February 2023 and RCE 3 in June 2023.</p>
+                                    </div>
+                                    <h3 class="detail__subtitle">Technical sheet</h3>
+                                    <dl class="detail__facts">
+                                        <div><dt>Campaign</dt><dd>C’Space 2023</dd></div>
+                                        <div><dt>Launch</dt><dd>20-07-2023</dd></div>
+                                        <div><dt>Result</dt><dd>Ballistic flight</dd></div>
+                                        <div><dt>Motor</dt><dd>Pro 54</dd></div>
+                                        <div><dt>Structure</dt><dd>Load-bearing truss</dd></div>
+                                        <div><dt>Experiment</dt><dd>Supersonic flight, 350&nbsp;g payload capacity</dd></div>
+                                    </dl>
+                                    <h3 class="detail__subtitle">Project team</h3>
+                                    <ul class="crew">
+                                        <li><img src="../assets/img/team/sm/paulm.jpg" alt="" width="192" height="192" /><span><strong>Paul Miailhe</strong>President 2019 – 2022</span></li>
+                                        <li><img src="../assets/img/team/sm/paulb.jpg" alt="" width="192" height="192" /><span><strong>Paul Boymond</strong>Treasurer 2019 – 2022</span></li>
+                                        <li><img src="../assets/img/team/sm/quentin.jpg" alt="" width="192" height="192" /><span><strong>Quentin Bakrim</strong>Member</span></li>
+                                        <li><span class="crew__initials" aria-hidden="true">LB</span><span><strong>Louis B.</strong>Member</span></li>
+                                    </ul>
+                                    <h3 class="detail__subtitle">Documents</h3>
+                                    <div class="detail__actions">
+                                        <a class="btn btn--ghost" href="https://drive.google.com/file/d/10kODkH3hWwPDshDGqgOvMsy86T8yKPkh/view?usp=sharing" target="_blank" rel="noopener">Mission report <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                                    </div>
+                                </template>
+                            </li>
+
+                            <li class="mission card-hit" data-category="minif">
+                                <img class="mission__patch" src="../assets/img/portfolio/logo-epsijlon.png" alt="" width="400" height="300" loading="lazy" decoding="async" />
+                                <div class="mission__body">
+                                    <p class="meta">Minif · C’Space 2023</p>
+                                    <h3 class="mission__title"><button class="card-hit__btn" type="button" data-dialog-open aria-haspopup="dialog">Epsiᒧᒪon</button></h3>
+                                    <p class="mission__fact">Team of 2 members</p>
+                                </div>
+                                <svg class="mission__chevron" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+                                <template data-detail>
+                                    <header class="detail__head">
+                                        <img class="detail__patch" src="../assets/img/portfolio/logo-epsijlon.png" alt="" width="400" height="300" />
+                                        <div>
+                                            <p class="meta">Minif (mini-rocket) · C’Space 2023</p>
+                                            <h2 class="detail__title" id="dialog-title">Epsiᒧᒪon</h2>
+                                            <p class="detail__lead">A mini-rocket instrumented to measure atmospheric temperature.</p>
+                                        </div>
+                                    </header>
+                                    <h3 class="detail__subtitle">The mission</h3>
+                                    <div class="detail__body">
+                                        <p>Epsiᒧᒪon recorded the atmospheric temperature throughout its flight, after exceeding 27&nbsp;g of acceleration on the launch rail. The project ran from September 2022 to July 2023.</p>
+                                    </div>
+                                    <h3 class="detail__subtitle">Technical sheet</h3>
+                                    <dl class="detail__facts">
+                                        <div><dt>Campaign</dt><dd>C’Space 2023</dd></div>
+                                        <div><dt>Launch</dt><dd>07-2023</dd></div>
+                                        <div><dt>Result</dt><dd>Nominal flight</dd></div>
+                                        <div><dt>Motor</dt><dd>Pandora</dd></div>
+                                        <div><dt>Structure</dt><dd>Load-bearing skin</dd></div>
+                                        <div><dt>Experiment</dt><dd>Atmospheric temperature measurement</dd></div>
+                                    </dl>
+                                    <h3 class="detail__subtitle">Project team</h3>
+                                    <ul class="crew">
+                                        <li><img src="../assets/img/team/sm/evannkurzawa.jpg" alt="" width="192" height="192" /><span><strong>Evann Kurzawa</strong>Member</span></li>
+                                        <li><img src="../assets/img/team/sm/aldricparent.jpg" alt="" width="192" height="192" /><span><strong>Aldric Parent</strong>Member</span></li>
+                                    </ul>
+                                    <h3 class="detail__subtitle">Documents</h3>
+                                    <div class="detail__actions">
+                                        <a class="btn btn--ghost" href="https://drive.google.com/file/d/1t_-QeOVd8icOFRgIPTI3qqFxIy1fmtz-/view?usp=drive_link" target="_blank" rel="noopener">Mission report <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                                    </div>
+                                </template>
+                            </li>
+
+                            <li class="mission card-hit" data-category="minif">
+                                <img class="mission__patch" src="../assets/img/portfolio/logo-fuseebulon.png" alt="" width="400" height="300" loading="lazy" decoding="async" />
+                                <div class="mission__body">
+                                    <p class="meta">Minif · C’Space 2023</p>
+                                    <h3 class="mission__title"><button class="card-hit__btn" type="button" data-dialog-open aria-haspopup="dialog">Fuséebulon</button></h3>
+                                    <p class="mission__fact">Team of 3 members</p>
+                                </div>
+                                <svg class="mission__chevron" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+                                <template data-detail>
+                                    <header class="detail__head">
+                                        <img class="detail__patch" src="../assets/img/portfolio/logo-fuseebulon.png" alt="" width="400" height="300" />
+                                        <div>
+                                            <p class="meta">Minif (mini-rocket) · C’Space 2023</p>
+                                            <h2 class="detail__title" id="dialog-title">Fuséebulon</h2>
+                                            <p class="detail__lead">A mini-rocket dedicated to measuring atmospheric CO₂.</p>
+                                        </div>
+                                    </header>
+                                    <h3 class="detail__subtitle">The mission</h3>
+                                    <div class="detail__body">
+                                        <p>Fuséebulon recorded the variation of the CO₂ level throughout its flight. Its team then went on with the two-stage FUSEX Prometheus. The project ran from September 2022 to July 2023.</p>
+                                    </div>
+                                    <h3 class="detail__subtitle">Technical sheet</h3>
+                                    <dl class="detail__facts">
+                                        <div><dt>Campaign</dt><dd>C’Space 2023</dd></div>
+                                        <div><dt>Launch</dt><dd>07-2023</dd></div>
+                                        <div><dt>Result</dt><dd>Nominal flight</dd></div>
+                                        <div><dt>Motor</dt><dd>Pandora</dd></div>
+                                        <div><dt>Structure</dt><dd>Load-bearing skin</dd></div>
+                                        <div><dt>Experiment</dt><dd>In-flight CO₂ level measurement</dd></div>
+                                    </dl>
+                                    <h3 class="detail__subtitle">Project team</h3>
+                                    <ul class="crew">
+                                        <li><img src="../assets/img/team/sm/quentinhusson.jpg" alt="" width="192" height="192" /><span><strong>Quentin Husson</strong>Member</span></li>
+                                        <li><img src="../assets/img/team/sm/erwinmartin.jpg" alt="" width="192" height="192" /><span><strong>Erwin Martin</strong>Member</span></li>
+                                        <li><img src="../assets/img/team/sm/malodourdain.jpg" alt="" width="192" height="192" /><span><strong>Malo Dourdain</strong>Member</span></li>
+                                    </ul>
+                                    <h3 class="detail__subtitle">Documents</h3>
+                                    <div class="detail__actions">
+                                        <a class="btn btn--ghost" href="https://drive.google.com/file/d/1y68sGiWLEB5ABGPqYmmWeNAWC501L4Wj/view?usp=drive_link" target="_blank" rel="noopener">Mission report <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                                    </div>
+                                </template>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 2022 -->
+                    <li class="timeline__year" data-reveal>
+                        <div class="timeline__label"><span class="timeline__date">2022</span></div>
+                        <ul class="timeline__missions">
+                            <li class="mission card-hit" data-category="fusex">
+                                <img class="mission__patch" src="../assets/img/portfolio/logo-marsaut1.png" alt="" width="400" height="300" loading="lazy" decoding="async" />
+                                <div class="mission__body">
+                                    <p class="meta">FUSEX · C’Space 2022</p>
+                                    <h3 class="mission__title"><button class="card-hit__btn" type="button" data-dialog-open aria-haspopup="dialog">MARSAUT 1</button></h3>
+                                    <p class="mission__fact">Team of 6 members</p>
+                                </div>
+                                <svg class="mission__chevron" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+                                <template data-detail>
+                                    <header class="detail__head">
+                                        <img class="detail__patch" src="../assets/img/portfolio/logo-marsaut1.png" alt="" width="400" height="300" />
+                                        <div>
+                                            <p class="meta">FUSEX (experimental rocket) · C’Space 2022</p>
+                                            <h2 class="detail__title" id="dialog-title">MARSAUT 1</h2>
+                                            <p class="detail__lead">A launcher able to carry a 3&nbsp;kg payload to 2,000&nbsp;m, and an autonomous demonstrator able to land at a given position.</p>
+                                        </div>
+                                    </header>
+                                    <h3 class="detail__subtitle">The mission</h3>
+                                    <div class="detail__body">
+                                        <p>A larger version of MARSAUT 0, recovered under a round parachute. Its payload, a “drone” released at apogee, performs a controlled descent then brakes to land at a planned point, using an electric fan and four fins that steer the airflow (thrust vectoring).</p>
+                                    </div>
+                                    <h3 class="detail__subtitle">Technical sheet</h3>
+                                    <dl class="detail__facts">
+                                        <div><dt>Campaign</dt><dd>C’Space 2022</dd></div>
+                                        <div><dt>Launch</dt><dd>21-07-2022</dd></div>
+                                        <div><dt>Result</dt><dd>Flight data published</dd></div>
+                                        <div><dt>Motor</dt><dd>Pro 75</dd></div>
+                                        <div><dt>Structure</dt><dd>180&nbsp;cm, Ø&nbsp;120&nbsp;mm, 12&nbsp;kg; load-bearing truss, aluminium skin</dd></div>
+                                        <div><dt>Experiment</dt><dd>Thrust-vectoring landing drone</dd></div>
+                                    </dl>
+                                    <h3 class="detail__subtitle">Project team</h3>
+                                    <ul class="crew">
+                                        <li><img src="../assets/img/team/sm/paulm.jpg" alt="" width="192" height="192" /><span><strong>Paul Miailhe</strong>President 2019 – 2022</span></li>
+                                        <li><img src="../assets/img/team/sm/paulb.jpg" alt="" width="192" height="192" /><span><strong>Paul Boymond</strong>Treasurer 2019 – 2022</span></li>
+                                        <li><img src="../assets/img/team/sm/quentin.jpg" alt="" width="192" height="192" /><span><strong>Quentin Bakrim</strong>Member</span></li>
+                                        <li><img src="../assets/img/team/sm/arthur.jpg" alt="" width="192" height="192" /><span><strong>Arthur Chassande</strong>Member</span></li>
+                                        <li><img src="../assets/img/team/sm/sixtine.jpg" alt="" width="180" height="180" /><span><strong>Sixtine Peniguel</strong>Member</span></li>
+                                        <li><span class="crew__initials" aria-hidden="true">MB</span><span><strong>Melchior B.</strong>Member</span></li>
+                                    </ul>
+                                    <h3 class="detail__subtitle">Documents</h3>
+                                    <div class="detail__actions">
+                                        <a class="btn btn--primary" href="ms1-result.html">Flight results <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                                        <a class="btn btn--ghost" href="https://drive.google.com/file/d/1surQfv1ylc2xn98JhRaohHTVd34ynf5d/view?usp=share_link" target="_blank" rel="noopener">Mission report <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                                        <a class="btn btn--ghost" href="https://sketchfab.com/3d-models/marsaut-1-fusex-2022-729124ca0c2247a9a29a44643b3a2f73" target="_blank" rel="noopener">3D model <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                                    </div>
+                                </template>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 2021 -->
+                    <li class="timeline__year" data-reveal>
+                        <div class="timeline__label"><span class="timeline__date">2021</span></div>
+                        <ul class="timeline__missions">
+                            <li class="mission card-hit" data-category="fusex">
+                                <img class="mission__patch" src="../assets/img/portfolio/logo-marsaut.png" alt="" width="400" height="300" loading="lazy" decoding="async" />
+                                <div class="mission__body">
+                                    <p class="meta">FUSEX · C’Space 2021</p>
+                                    <h3 class="mission__title"><button class="card-hit__btn" type="button" data-dialog-open aria-haspopup="dialog">MARSAUT 0</button></h3>
+                                    <p class="mission__fact">Team of 5 members</p>
+                                </div>
+                                <svg class="mission__chevron" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+                                <template data-detail>
+                                    <header class="detail__head">
+                                        <img class="detail__patch" src="../assets/img/portfolio/logo-marsaut.png" alt="" width="400" height="300" />
+                                        <div>
+                                            <p class="meta">FUSEX (experimental rocket) · C’Space 2021</p>
+                                            <h2 class="detail__title" id="dialog-title">MARSAUT 0</h2>
+                                            <p class="detail__lead">MINES SPACE’s first space project: a single-stage FUSEX to study a tracking architecture.</p>
+                                        </div>
+                                    </header>
+                                    <h3 class="detail__subtitle">The mission</h3>
+                                    <div class="detail__body">
+                                        <p>Goal: follow the flight in real time. On-board sensors measure trajectory, loads and flight events, sent by LoRa telemetry (868&nbsp;MHz) to a ground station that displays them live. This tracking system was later reused on MARSAUT 1 and MSE.</p>
+                                    </div>
+                                    <h3 class="detail__subtitle">Technical sheet</h3>
+                                    <dl class="detail__facts">
+                                        <div><dt>Campaign</dt><dd>C’Space 2021</dd></div>
+                                        <div><dt>Launch</dt><dd>22-07-2021</dd></div>
+                                        <div><dt>Result</dt><dd>Flight data published</dd></div>
+                                        <div><dt>Motor</dt><dd>Pro 54</dd></div>
+                                        <div><dt>Structure</dt><dd>Single stage, load-bearing truss, aluminium skin</dd></div>
+                                        <div><dt>Experiment</dt><dd>868&nbsp;MHz LoRa telemetry and ground station</dd></div>
+                                    </dl>
+                                    <h3 class="detail__subtitle">Project team</h3>
+                                    <ul class="crew">
+                                        <li><img src="../assets/img/team/sm/paulm.jpg" alt="" width="192" height="192" /><span><strong>Paul Miailhe</strong>President 2019 – 2022</span></li>
+                                        <li><img src="../assets/img/team/sm/paulb.jpg" alt="" width="192" height="192" /><span><strong>Paul Boymond</strong>Treasurer 2019 – 2022</span></li>
+                                        <li><img src="../assets/img/team/sm/quentin.jpg" alt="" width="192" height="192" /><span><strong>Quentin Bakrim</strong>Member</span></li>
+                                        <li><img src="../assets/img/team/sm/arthur.jpg" alt="" width="192" height="192" /><span><strong>Arthur Chassande</strong>Member</span></li>
+                                        <li><img src="../assets/img/team/sm/sixtine.jpg" alt="" width="180" height="180" /><span><strong>Sixtine Peniguel</strong>Member</span></li>
+                                    </ul>
+                                    <h3 class="detail__subtitle">Documents</h3>
+                                    <div class="detail__actions">
+                                        <a class="btn btn--primary" href="ms0-result.html">Flight results <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                                        <a class="btn btn--ghost" href="https://drive.google.com/file/d/17PJa4Hc0PvfgN_OFPRNejJ7FbC2fhY7Q/view?usp=sharing" target="_blank" rel="noopener">Mission report <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                                        <a class="btn btn--ghost" href="../assets/docs/marsaut0-document-de-definition.pdf" target="_blank" rel="noopener">Design document <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                                        <a class="btn btn--ghost" href="https://sketchfab.com/3d-models/marsaut-0-fusex-7a6c3129f2d44891bfc92a4b15ab961e" target="_blank" rel="noopener">3D model <svg aria-hidden="true"><use href="#i-external"/></svg></a>
+                                    </div>
+                                </template>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="timeline__year timeline__year--origin" data-reveal>
+                        <div class="timeline__label"><span class="timeline__date">2019</span></div>
+                        <p class="timeline__origin"><strong>MINES SPACE is founded</strong> · December 2019</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ 03 · GALLERY ============ -->
+        <section class="section section--gallery" id="galerie" aria-labelledby="galerie-title">
+            <div class="container">
+                <header class="section-head section-head--split" data-reveal>
+                    <div>
+                        <p class="eyebrow"><span class="eyebrow__num">03</span> Gallery</p>
+                        <h2 class="section-title" id="galerie-title">Our projects in pictures</h2>
+                    </div>
+                    <div class="carousel__controls">
+                        <button class="icon-btn" type="button" data-carousel-prev aria-label="Previous photos">
+                            <svg aria-hidden="true"><use href="#i-chevron-left"/></svg>
+                        </button>
+                        <button class="icon-btn carousel__toggle" type="button" data-carousel-toggle aria-pressed="false" aria-label="Pause the photo carousel">
+                            <svg aria-hidden="true"><use href="#i-pause"/></svg>
+                        </button>
+                        <button class="icon-btn" type="button" data-carousel-next aria-label="Next photos">
+                            <svg aria-hidden="true"><use href="#i-chevron-right"/></svg>
+                        </button>
+                    </div>
+                </header>
+            </div>
+
+            <div class="carousel" data-carousel data-github="MinesSpace/MinesSpace.github.io" data-photos="../assets/carrousel/" data-reveal aria-roledescription="carousel" aria-label="MINES SPACE photos">
+                <ul class="carousel__track" data-carousel-track><!-- Filled automatically from assets/carrousel/ (see LISEZ-MOI.txt in that folder) --></ul>
+            </div>
+        </section>
+
+        <section class="partners-band section--alt" aria-label="Partners">
+            <div class="container">
+                <div class="partners" data-reveal>
+                    <p class="partners__label">Our supporters</p>
+                    <ul class="partners__list">
+                        <li>
+                            <a class="partner" href="https://www.mines-stetienne.fr/en/" target="_blank" rel="noopener">
+                                <span class="partner__logo"><img src="../assets/img/logos/emse.png" alt="" width="250" height="250" loading="lazy" decoding="async" /></span>
+                                <span class="partner__text"><strong>Mines Saint-Étienne</strong><span>Fablab access and funding</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="partner" href="https://cnes.fr/en" target="_blank" rel="noopener">
+                                <span class="partner__logo"><img src="../assets/img/logos/cnes.png" alt="" loading="lazy" decoding="async" /></span>
+                                <span class="partner__text"><strong>CNES</strong><span>Technical supervision and motors</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="partner" href="https://www.planete-sciences.org/espace/" target="_blank" rel="noopener">
+                                <span class="partner__logo"><img src="../assets/img/logos/planete-science.png" alt="" loading="lazy" decoding="async" /></span>
+                                <span class="partner__text"><strong>Planète Sciences</strong><span>Project follow-up and regulations</span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="partner" href="https://fr.rs-online.com/web/" target="_blank" rel="noopener">
+                                <span class="partner__logo"><img src="../assets/img/logos/Radiospare.png" alt="" loading="lazy" decoding="async" /></span>
+                                <span class="partner__text"><strong>RS France</strong><span>Electronic components</span></span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-            </br></br></br></br>
-                <h1 class="masthead-heading text-uppercase">Mines Space</h1>
-                <h2 class="masthead-subheading">The space association of Mines Saint-Étienne School</h2>
-            </div>
-        </header>
-
-        <!-- association-->
-        <section class="page-section" id="association">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">The association</h2>
-                    <h3 class="section-subheading text-muted">Mines Space is the story of six students passionate about aerospace who decided to come together to undertake a common project: launching a rocket at C'Space, the annual launch campaign organized by CNES, the French Space Agency. Today, the association has 9 members divided into 3 projects.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <span class="fa-stack fa-4x">
-                           <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Passionnate students</h4>           
-                         <p class="text-muted-justify">
-                            Our association brings together students from various fields of study at the school: <a href="https://www.mines-stetienne.fr/formation/icm/" target="_blank">Ingénieur Civil des Mines</a>, <a href="https://www.mines-stetienne.fr/formation/ingenieur-systemes-electroniques-embarques/" target="_blank">Ingénieur Systèmes Électroniques Embarqués</a>, <a href="https://www.mines-stetienne.fr/formation/ingenieur-valorisation-energetique/" target="_blank">Ingénieur Valorisation Énergétique</a> et <a href="https://www.mines-stetienne.fr/formation/ingenieur-genie-industriel/" target="_blank">Ingénieur Génie Industriel</a>.
-                            Its mission is to provide students with the human and technical resources necessary to successfully carry out their aerospace projects..</br>
-                         </p>
-                    </div>
-
-                    <div class="col-md-6">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-handshake fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Our partners</h4>
-                        <p class="text-muted-justify">
-                            To carry out our projects, we have access to the equipment at the <a href="https://spaces.wondavr.com/embed/?course=7d7411a0-cea0-11eb-be8c-9de6cce42c37" target="_blank">school Fablab</a> : 3D printing, laser cutting, and various machining equipment. Additionally, we are fortunate to rely on our <a href="#partner">partners</a>. Thanks to their financial support or the provision of high-quality materials and components, we can expand the scope of our projects.
-            </p>
-              <!--      </div>
-                
-                        <p class="section-subheading text-muted-justify">
-                            Quelques photos : 
-                        </p>
-
-
-                    <div class="offset-md-1 col-md-10 google-slides-container">
-                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR6loUGTOThIhv3e06R93tR-GHfdZA5G6GiPBpzmma-3iEYyhPQTa4x4Gb0bgoeTgJjuFG7GW0aC_G_/embed?start=true&loop=true&delayms=5000" frameborder="0" width="960" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                    </div>
-                </div>
-                -->
-            </div>
         </section>
 
-         <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our projects</h2>
-                    <h3 class="section-subheading text-uppercase"></h3>
+        <!-- ============ 04 · CONTACT ============ -->
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="container contact">
+                <div class="contact__intro" data-reveal>
+                    <p class="eyebrow"><span class="eyebrow__num">04</span> Contact</p>
+                    <h2 class="section-title" id="contact-title">Get in touch</h2>
+
+                    <ul class="contact-links">
+                        <li>
+                            <a href="mailto:minesspace.asso@gmail.com">
+                                <span class="contact-links__icon" aria-hidden="true"><svg><use href="#i-mail"/></svg></span>
+                                <span class="contact-links__text"><strong>Email</strong><span>minesspace.asso@gmail.com</span></span>
+                                <svg class="contact-links__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/mines-space/" target="_blank" rel="noopener">
+                                <span class="contact-links__icon" aria-hidden="true"><svg><use href="#i-linkedin"/></svg></span>
+                                <span class="contact-links__text"><strong>LinkedIn</strong><span>MINES SPACE</span></span>
+                                <svg class="contact-links__arrow" aria-hidden="true"><use href="#i-external"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/mines_space/" target="_blank" rel="noopener">
+                                <span class="contact-links__icon" aria-hidden="true"><svg><use href="#i-instagram"/></svg></span>
+                                <span class="contact-links__text"><strong>Instagram</strong><span>@mines_space</span></span>
+                                <svg class="contact-links__arrow" aria-hidden="true"><use href="#i-external"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/MinesSpace" target="_blank" rel="noopener">
+                                <span class="contact-links__icon" aria-hidden="true"><svg><use href="#i-facebook"/></svg></span>
+                                <span class="contact-links__text"><strong>Facebook</strong><span>MinesSpace</span></span>
+                                <svg class="contact-links__arrow" aria-hidden="true"><use href="#i-external"/></svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                 <!--   <p class="text-muted-none">
-                        Text
-                        <li class="text-muted-none"><strong>MARSAUT 0</strong>: FUSEX ayant permis de développer une architecture de suivi réutilisable pour les projets MARSAUT 1 et MSE.</li>
-                        <li class="text-muted-none"><strong>MARSAUT 1</strong>: FUSEX comportant un premier étage capable d'amener une charge utile de 3kg à une altitude de 2000m, et un second étage capable d'atterrir à une position donnée.
-                        <li class="text-muted-none"><strong>MSE</strong> : FUSEX supersonique.</li>
-                        <li class="text-muted-none"><strong>Prometheus</strong> : FUSEX bi-étage ayant pour objectif de tester un système de séparation.    </li>
-                    </p> -->
 
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#project-marsaut">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-4x"></i></div>
-                                    </div>
-    
-                                    <div>
-                                        <img class="img-fluid" src="../assets/img/portfolio/logo-marsaut.png" alt="" />
-                                        <i class="fas fa-info-circle fa-4x top-image"></i>
-                                    </div>
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">MARSAUT 0</div>
-                                    <div class="portfolio-caption-subheading text-muted">FUSEX - FUSée EXpérimentale</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-12 mb-4">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#project-marsaut1">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-    
-                                    <div>
-                                        <img class="img-fluid" src="../assets/img/portfolio/logo-marsaut1.png" alt="" />
-                                        <i class="fas fa-info-circle fa-3x top-image"></i>
-                                    </div>
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">MARSAUT 1</div>
-                                    <div class="portfolio-caption-subheading text-muted">FUSEX - FUSée EXpérimentale</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-12 mb-3">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#project-mse">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-    
-                                    <div>
-                                        <img class="img-fluid" src="../assets/img/portfolio/logo-mse.png" alt="" />
-                                        <i class="fas fa-info-circle fa-3x top-image"></i>
-                                    </div>
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">MSE</div>
-                                    <div class="portfolio-caption-subheading text-muted">FUSEX - FUSée EXpérimentale</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12 mb-3">
-                            <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#project-prometheus">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
+                <div class="form-card" data-reveal>
+                    <form class="form" id="contact-form" novalidate
+                          action="https://docs.google.com/forms/d/e/1FAIpQLSft0jzzivyXVh2pxwNk5RxuTxj8EAhQRnKY43KslLGsCbEVvQ/formResponse"
+                          method="post">
+                        <input type="hidden" name="pageHistory" value="0,1,3" />
 
-                                    <div>
-                                        <img class="img-fluid" src="../assets/img/portfolio/logo-prometheus.png" alt="" />
-                                        <i class="fas fa-info-circle fa-3x top-image"></i>
-                                    </div>
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Prometheus</div>
-                                    <div class="portfolio-caption-subheading text-muted">FUSEX - FUSée EXpérimentale </div>
-                                </div>
+                        <fieldset class="segmented">
+                            <legend class="field__label">You are</legend>
+                            <div class="segmented__track">
+                                <label><input type="radio" name="entry.1145234919" value="Un particulier - A particular" checked /><span>An individual</span></label>
+                                <label><input type="radio" name="entry.1145234919" value="Une entreprise - A company" /><span>A company</span></label>
+                            </div>
+                        </fieldset>
+
+                        <div class="field" data-company hidden>
+                            <label class="field__label" for="f-company">Company</label>
+                            <input class="input" id="f-company" name="entry.17440860" autocomplete="organization" aria-describedby="f-company-error" />
+                            <p class="field__error" id="f-company-error"></p>
+                        </div>
+
+                        <div class="field-row">
+                            <div class="field">
+                                <label class="field__label" for="f-name">Name</label>
+                                <input class="input" id="f-name" name="entry.585949797" autocomplete="name" required aria-describedby="f-name-error" />
+                                <p class="field__error" id="f-name-error"></p>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="f-email">Email</label>
+                                <input class="input" id="f-email" name="emailAddress" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-error" />
+                                <p class="field__error" id="f-email-error"></p>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-sm-12 mb-6">
-                          <div class="portfolio-item">
-                                <a class="portfolio-link" data-toggle="modal" href="#project-epsijlon2">
-                                    <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-
-                                    <div>
-                                        <img class="img-fluid" src="../assets/img/portfolio/logo-epsijlon2.png" alt="" />
-                                        <i class="fas fa-info-circle fa-3x top-image"></i>
-                                    </div>
-                                </a>
-                                <div class="portfolio-caption">
-                                    <div class="portfolio-caption-heading">Epsiᒧᒪon 2</div>
-                                    <div class="portfolio-caption-subheading text-muted">FUSEX - FUSée EXpérimentale </div>
-                                </div>
+                        <div class="field">
+                            <label class="field__label" for="f-subject">Subject</label>
+                            <div class="chips" role="group" aria-label="Common subjects">
+                                <button type="button" class="chip" data-subject="Partnership" aria-pressed="false">Partnership</button>
+                                <button type="button" class="chip" data-subject="Joining the association" aria-pressed="false">Joining the association</button>
+                                <button type="button" class="chip" data-subject="Question about a project" aria-pressed="false">Question about a project</button>
                             </div>
+                            <input class="input" id="f-subject" name="entry.535388239" required aria-describedby="f-subject-error" placeholder="Or write your own subject" />
+                            <p class="field__error" id="f-subject-error"></p>
                         </div>
-                    </div>
-                
-                
-                </br></br>
-                <!--    <h4 class="my-3">The mini-rockets : </h4> -->
-                <!--    <p class="text-muted-none">
 
-                        <li class="text-muted-none"><strong>Fuséebulon</strong> : Mini-fusée ayant relevé la variation du taux de CO2 tout au long de son vol.    </li>
-                        <li class="text-muted-none"><strong>Epsiᒧᒪon</strong> : Mini-fusée ayant dépassé une accélération de 27g en rampe, et ayant relevé la température atmosphérique tout au long de son vol.    </li>
-                        <li class="text-muted-none"><strong>Marianne 6</strong> : Mini-fusée servant à comparer les données de vol d'une centrale inertielle et d'un tube de Pitot.   </li> 
-                    </p>  -->
-
-
-
-                <div class="row">
-    <div class="col-lg-4 col-sm-12 mb-4">
-        <div class="portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#project-fuseebulon">
-                <div class="portfolio-hover">
-                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                </div>
-                <div>
-                    <img class="img-fluid" src="../assets/img/portfolio/logo-fuseebulon.png" alt="" />
-                    <i class="fas fa-info-circle fa-3x top-image"></i>
-                </div>
-            </a>
-            <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Fuséebulon</div>
-                <div class="portfolio-caption-subheading text-muted">Minif - Mini fusée</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-4 col-sm-12 mb-4">
-        <div class="portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#project-epsijlon">
-                <div class="portfolio-hover">
-                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                </div>
-                <div>
-                    <img class="img-fluid" src="../assets/img/portfolio/logo-epsijlon.png" alt="" />
-                    <i class="fas fa-info-circle fa-3x top-image"></i>
-                </div>
-            </a>
-            <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Epsiᒧᒪon</div>
-                <div class="portfolio-caption-subheading text-muted">Minif - Mini fusée</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-4 col-sm-12 mb-4">
-        <div class="portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#project-marianne6">
-                <div class="portfolio-hover">
-                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                </div>
-                <div>
-                    <img class="img-fluid" src="../assets/img/portfolio/logo-marianne6-400x300.png" alt="" />
-                    <i class="fas fa-info-circle fa-3x top-image"></i>
-                </div>
-            </a>
-            <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Marianne 6</div>
-                <div class="portfolio-caption-subheading text-muted">Minif - Mini fusée</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-4 col-sm-12 mb-4">
-        <div class="portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#project-fourneyron">
-                <div class="portfolio-hover">
-                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                </div>
-                <div>
-                    <img class="img-fluid" src="../assets/img/portfolio/logo-fourneyron.png" alt="" />
-                    <i class="fas fa-info-circle fa-3x top-image"></i>
-                </div>
-            </a>
-            <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Fourneyron</div>
-                <div class="portfolio-caption-subheading text-muted">Minif - Mini fusée</div>
-            </div>
-        </div>
-    </div>
-</div>
-         <!-- Team-->
-<section class="page-section" id="team">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Meet our team:</h2>
-            <h3 class="section-subheading text-uppercase"></h3>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/antoninbonneau.png" alt="" />
-                    <h4>Antonin Bonneau</h4>
-                    <i>- President -</i>
-                    <p class="text-muted">Fourneyron & Apogée</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/antonin-bonneau-b9562b332/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/quentinliogier.jpg" alt="" />
-                    <h4>Quentin Liogier</h4>
-                    <i>- Treasurer -</i>
-                    <p class="text-muted">Fourneyron & Apogée</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/quentin-liogier-2b1997228/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/matthiascalmes.jpg" alt="" />
-                    <h4>Matthias Calmes</h4>
-                    <i>- Member -</i>
-                    <p class="text-muted">Fourneyron & Apogée</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/calmes-matthias/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/gaelkandel.jpg" alt="" />
-                    <h4>Gaël Kandel</h4>
-                    <i>- Member -</i>
-                    <p class="text-muted">Marianne 6</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/ga%C3%ABl-kandel-739575197/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/thomasjourdan.jpeg" alt="" />
-                    <h4>Thomas Jourdan</h4>
-                    <i>- Member -</i>
-                    <p class="text-muted">Marianne 6</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/thomas-jourdan-inge/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Former members:</h2>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/evannkurzawa.jpeg" alt="" />
-                    <h4>Evann Kurzawa</h4>
-                    <p class="text-muted">Epsiᒧᒪon & Epsiᒧᒪon 2</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/evann-kurzawa-57089224b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/aldricparent.jpeg" alt="" />
-                    <h4>Aldric Parent</h4>
-                    <p class="text-muted">Epsiᒧᒪon & Epsiᒧᒪon 2</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/aldric-parent-1a33211a8/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/quentinhusson.jpeg" alt="" />
-                    <h4>Quentin Husson</h4>
-                    <p class="text-muted">Fuséebulon & Prometheus</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/quentin-husson-3a9a56275/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/erwinmartin.jpeg" alt="" />
-                    <h4>Erwin Martin</h4>
-                    <p class="text-muted">Fuséebulon & Prometheus</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/erwin-martin/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/malodourdain.jpeg" alt="" />
-                    <h4>Malo Dourdain</h4>
-                    <p class="text-muted">Fuséebulon & Prometheus</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/malo-dourdain-545867253/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/quentin.png" alt="" />
-                    <h4>Quentin Bakrim</h4>
-                    <p class="text-muted">MARSAUT project</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://github.com/QBKM" target="_blank"><i class="fab fa-github"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/quentin-bakrim/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/paulb.png" alt="" />
-                    <h4>Paul Boymond</h4>
-                    <p class="text-mutded"><i>- Treasurer 2019-2022 -</i></p>
-                    <p class="text-muted">MARSAUT project</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://github.com/Dev-pab" target="_blank"><i class="fab fa-github"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/paul-boymond-a4a701195/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/arthur.png" alt="" />
-                    <h4>Arthur Chassande</h4>
-                    <p class="text-muted">MARSAUT project</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://github.com/ArthurCHASSANDE" target="_blank"><i class="fab fa-github"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/arthur-chassande-a1a009173/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/paulm.png" alt="" />
-                    <h4>Paul Miailhe</h4>
-                    <p class="text-mutded"><i>- President 2019-2022 -</i></p>
-                    <p class="text-muted">MARSAUT project</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://github.com/axpaul" target="_blank"><i class="fab fa-github"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/paul-miailhe-741272156/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/sixtine.png" alt="" />
-                    <h4>Sixtine Peniguel</h4>
-                    <p class="text-muted">MARSAUT project</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/sixtine-peniguel-b60452170/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="../assets/img/team/enzo.png" alt="" />
-                    <h4>Enzo Picas</h4>
-                    <p class="text-muted">Web development</p>
-                    <a class="btn btn-dark btn-social mx-2" href="https://github.com/enzopicas" target="_blank"><i class="fab fa-github"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/enzo-picas/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-        <!-- Clients-->
-        <div class="page-section py-5 bg-light" id=partner>
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our partners</h2>
-                </div>
-                    <h4 class="my-3"></h4>
-                    <p class="text-muted-justify">
-                        The objective of our association is to provide students with the human and technical resources needed to carry out aerospace-related projects. To achieve our goals, we are fortunate to rely on our partners. Thanks to their financial contributions and supply of high-quality materials and components, we can expand the scope of our projects.</br>
-                    </p>
-                    <p class="text-muted-justify">
-                        The companies that trust us today:
-                    </p>
-
-
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-12">
-                        <a href="https://www.mines-stetienne.fr/" target="_blank"><img class="img-fluid d-block mx-auto" src="../assets/img/logos/emse.png" alt="" /></a>
-                    </div>
-                    <div class="col-md-10 col-sm-2">
-                        <a href="https://www.mines-stetienne.fr/" target="_blank"><b>École des Mines de Saint Étienne</b></a></br>
-                        Our school partners with the association by providing us access to the FABLAB and financial support.
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-12">
-                        <a href="https://cnes.fr/fr/" target="_blank"><img class="img-fluid d-block mx-auto" src="../assets/img/logos/cnes.png" alt="" /></a>
-                    </div>
-                    <div class="col-md-10 col-sm-2">
-                        <a href="https://cnes.fr/fr/" target="_blank"><b>Centre National d'Études Spatiales</b></a></br>
-                        The French space agency provides us with technical guidance, rocket propulsion systems, and the flight chain for stratospheric balloon missions.
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-12">
-                        <a href="https://www.planete-sciences.org/espace/" target="_blank"><img class="img-fluid d-block mx-auto" src="../assets/img/logos/planete-science.png" alt="" /></a>
-                    </div>
-                    <div class="col-md-10 col-sm-2">
-                        <a href="https://www.planete-sciences.org/espace/" target="_blank"><b>Planète Science</b></a></br>
-                        This association serves as the link between CNES and us, helping us to remain within legal frameworks, particularly to avoid disrupting air traffic.
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-12">
-                        <a href="https://fr.rs-online.com/web/" target="_blank"><img class="img-fluid d-block mx-auto" src="../assets/img/logos/Radiospare.png" alt="" /></a>
-                    </div>
-                    <div class="col-md-10 col-sm-2">
-                        <b><a href="https://fr.rs-online.com/web/" target="_blank">RS France</b></a></br>
-                        RS France regularly provides us with the electrical equipment we need.
-                    </div>
-                </div>
-                <!--
-                <p class="text-muted-justify">
-                </br> Les sociétés qui ont soutenus nos anciens : 
-                </p>
-
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-12">
-                        <a href="https://www.istp.fr/" target="_blank"><img class="img-fluid d-block mx-auto" src="../assets/img/logos/ISTP.png" alt="" /></a>
-                    </div>
-                    <div class="col-md-10 col-sm-2">
-                        <b><a href="https://www.istp.fr/" target="_blank">ISTP</b></a></br>
-                        Le partenaire de l'école des Mines de Saint Etienne pour les formations en apprentissage nous aide fournissant une participation financière.
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-12">
-                        <a href="https://completech.fi/" target="_blank"><img class="img-fluid d-block mx-auto" src="../assets/img/logos/completech.png" alt="" /></a>
-                    </div>
-                    <div class="col-md-10 col-sm-2">
-                        <a href="https://completech.fi/" target="_blank"><b>CompleTech</b></a></br>
-                        Ce partenaire nous permet d'assurer une bonne réception de nos données de mission, grâce à la fourniture de plusieurs antennes radio.
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-12">
-                        <a href="https://www.thalesgroup.com/fr" target="_blank"><img class="img-fluid d-block mx-auto" src="../assets/img/logos/thales.png" alt="" /></a>
-                    </div>
-                    <div class="col-md-10 col-sm-2">
-                        <b><a href="https://www.thalesgroup.com/fr" target="_blank">THALES</b></a></br>
-                        Suite à notre participation à la campagne de sponsoring Thales, nous sommes financièrement soutenus par Thales.
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-12">
-                        <a href="https://www.mbda-systems.com/" target="_blank"><img class="img-fluid d-block mx-auto" src="../assets/img/logos/mbda.png" alt="" /></a>
-                    </div>
-                    <div class="col-md-10 col-sm-2">
-                        <b><a href="https://www.mbda-systems.com/" target="_blank">MBDA</b></a></br>
-                        Ce partenaire a contribué financièrement au développement de Mines Space.
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-12">
-                        <a href="https://www.st.com/content/st_com/en.html" target="_blank"><img class="img-fluid d-block mx-auto" src="../assets/img/logos/st.png" alt="" /></a>
-                    </div>
-                    <div class="col-md-10 col-sm-2">
-                        <b><a href="https://www.st.com/content/st_com/en.html" target="_blank">ST Microelectronics</b></a></br>
-                        Ce partenaire historique nous fournit une grande quantité de cartes électroniques, tout en nous assurant une fonction support privilégiée.
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-12">
-                        <a href="https://www.altium.com/fr" target="_blank"><img class="img-fluid d-block mx-auto" src="../assets/img/logos/altium.png" alt="" /></a>
-                    </div>
-                    <div class="col-md-10 col-sm-2">
-                        <a href="https://www.altium.com/fr" target="_blank"><b>Altium</b></a></br>
-                        Grâce à ce partenariat, nous pouvons réaliser nos schémas électroniques sur un logiciel professionnel, et ainsi améliorer la qualité de nos cartes.
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-12">
-                        <a href="https://makerfaire.com/" target="_blank"><img class="img-fluid d-block mx-auto" src="../assets/img/logos/MakerFaire.png" alt="" /></a>
-                    </div>
-                    <div class="col-md-10 col-sm-2">
-                        <a href="https://makerfaire.com/" target="_blank"><b>MakerFaire</b></a></br>
-                        MakerFaire nous a aidé en organisant un concours qui a permis à Mines Space d'aquérir du matériel.
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-md-2 col-sm-12">
-                        <a href="https://www.easycomposites.eu/" target="_blank"><img class="img-fluid d-block mx-auto" src="../assets/img/logos/EasyComposites.png" alt="" /></a>
-                    </div>
-                    <div class="col-md-10 col-sm-2">
-                        <a href="https://www.easycomposites.eu/" target="_blank"><b>Easy Composites</b></a></br>
-                        Easy Composites nous a apporté des conseils techniques ainsi que des réductions sur leurs produits.
-                    </div>
-                </div>
-            -->
-            </div>
-        </div>
-
-       
-
-  
-          <!-- About-->
-          <section class="page-section-timeline" id="history">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">History</h2>
-                    <h3 class="section-subheading text-muted">Mines Space keys moments.</h3>
-                </div>
-
-            </br></br>
-
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/about/1.png" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2019</h4>
-                                <h4 class="subheading">Club creation</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Make way for projects !</p></div>
+                        <div class="field">
+                            <label class="field__label" for="f-message">Message</label>
+                            <textarea class="input input--area" id="f-message" name="entry.463307785" rows="5" required aria-describedby="f-message-error"></textarea>
+                            <p class="field__error" id="f-message-error"></p>
                         </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/about/2.png" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="subheading">MARSAUT 0</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">
-                                    18-12-2020 : RCE1 checked</br>
-                                    07-03-2021 : RCE2 checked</br>
-                                    20-06-2021 : RCE3 checked</br>
-                                    22-07-2021 : <a href="../fr/ms0-result.html">🚀 Launch - See results</a>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
 
-                    <li class="timeline">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/about/3.png" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="subheading">MARSAUT 1</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">
-                                    10-2021 : RCE1 checked</br>
-                                    02-2022 : RCE2 checked</br>
-                                    05-2022 : RCE3 checked</br>
-                                    21-07-2022 : <a href="../fr/ms1-result.html">🚀 Launch - See results</a>
-                                </p>
-                            </div>
+                        <div class="form__foot">
+                            <button class="btn btn--primary btn--block" type="submit" data-submit>
+                                <span data-submit-label>Send message</span>
+                                <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+                            </button>
+                            <p class="form__note">
+                                Trouble with the form? Email us at
+                                <a href="mailto:minesspace.asso@gmail.com">minesspace.asso@gmail.com</a>
+                                or <a href="https://docs.google.com/forms/d/e/1FAIpQLSft0jzzivyXVh2pxwNk5RxuTxj8EAhQRnKY43KslLGsCbEVvQ/viewform" target="_blank" rel="noopener">open the Google Forms version</a>.
+                            </p>
                         </div>
-                    </li>
-                    
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/about/4.png" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="subheading">MSE</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">
-                                    10-2022 : RCE1 checked</br>
-                                    02-2023 : RCE2 checked</br>
-                                    06-2023 : RCE3 checked</br>
-                                    20-07-2023 : <a href="../fr/mse-result.html">🚀 Launch - See results</a>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
+                        <p class="form__status" role="status" aria-live="polite" data-form-status></p>
+                    </form>
 
-                    <li class="timeline">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../assets/img/about/1.png" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="subheading">Fuséebulon & Epsiᒧᒪon</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">
-                                    10-2022 : RCE1 checked</br>
-                                    02-2023 : RCE2 checked</br>
-                                    06-2023 : RCE3 checked</br>
-                                    07-2023 : <a href="../fr/fuseebulon-result.html">🚀 Fuséebulon</a><a href="../fr/epsijlon-result.html"> & 🚀 Epsiᒧᒪon</a>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-					<li class="timeline-inverted">
-        <div class="timeline-image"><img class="rounded-circle img-fluid"
-     src="../assets/img/portfolio/logo-marianne6-400x300.png"
-     style="width: 150px; height: 150px; object-fit: cover;"
-     alt="" /></div>
-        <div class="timeline-panel">
-            <div class="timeline-heading">
-                <h4 class="subheading">Marianne 6</h4>
+                    <div class="form-success" data-form-success hidden tabindex="-1">
+                        <span class="form-success__icon" aria-hidden="true"><svg><use href="#i-check"/></svg></span>
+                        <h3>Message sent</h3>
+                        <p>Thank you! Your message has been passed on to the MINES SPACE board. We will get back to you soon.</p>
+                        <button class="btn btn--ghost" type="button" data-form-reset>Write another message</button>
+                    </div>
+                </div>
             </div>
-            <div class="timeline-body">
-                <p class="text-muted">
-                    07-2024 : Nominal flight
-                </p>
-            </div>
-        </div>
-    </li>
+        </section>
+    </main>
 
- 
-    <li class="timeline">
-        <div class="timeline-image"><img class="rounded-circle img-fluid"
-     src="../assets/img/portfolio/logo-fourneyron.png"
-     style="width: 150px; height: 150px; object-fit: cover;"
-     alt="" /></div>
-        <div class="timeline-panel">
-            <div class="timeline-heading">
-                <h4 class="subheading">Fourneyron</h4>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a class="brand" href="#accueil" aria-label="MINES SPACE, back to top">
+                    <img class="brand__mark" src="../assets/img/logo-ms-mark.png" alt="" width="533" height="315" loading="lazy" />
+                    <span class="brand__name">MINES SPACE</span>
+                </a>
+                <p>Student space association of the École des Mines de Saint-Étienne.</p>
+                <p class="footer__mail"><a href="mailto:minesspace.asso@gmail.com">minesspace.asso@gmail.com</a></p>
             </div>
-            <div class="timeline-body">
-                <p class="text-muted">
-                    07-2025 : Nominal flight
-                </p>
-            </div>
-        </div>
-    </li>
-                    <li class="timeline">
-                        <div class="timeline-image">
-                            <h4 style="color:darkblue">
-                                Other
-                                <br />
-                                Projects
-                                <br />
-                                Following !
-                            </h4>
-                        </div>
-                    </li>
-					
+            <div class="footer__col">
+                <p class="footer__title">Social</p>
+                <ul class="footer__socials">
+                    <li><a class="social-link" href="https://www.linkedin.com/company/mines-space/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+                    <li><a class="social-link" href="https://www.instagram.com/mines_space/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+                    <li><a class="social-link" href="https://www.facebook.com/MinesSpace" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-facebook"/></svg></a></li>
                 </ul>
             </div>
-        </section>
-
-       <!-- Contact-->
-       <section class="page-section bg-light" id="contact-section">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Contact</h2>
-                <h3 class="section-subheading text-uppercase">FOLLOW US ON SOCIAL NETWORKS!</h3>
-            </div>
-
-            <div class="row text-center">
-                <div class="col-md-3">
-                    <a class="btn btn-primary btn-social-body" href="https://github.com/MinesSpace" target="_blank"><i class="fab fa-github"></i></a>
-                    <h4 class="my-3">Github</h4>
-                </div>
-                <div class="col-md-3">
-                    <a class="btn btn-primary btn-social-body" href="https://www.facebook.com/MinesSpace" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <h4 class="my-3">Facebook</h4>
-                </div>
-                <div class="col-md-3">
-                    <a class="btn btn-primary btn-social-body" href="https://www.linkedin.com/company/mines-space/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <h4 class="my-3">LinkedIn</h4>
-                </div>
-                <div class="col-md-3">
-                    <a class="btn btn-primary btn-social-body" href="https://www.instagram.com/mines_space/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <h4 class="my-3">Instagram</h4>
-                </div>
-            </div>
-
-            <p></br></p>
-
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <a class="btn btn-primary btn-x1 text-uppercase" href="../fr/contact.html">Contact form</a>
-                </div>
-            </div>
         </div>
-    </section>
-
-        <!-- Footer-->  <!-- Si quelqu'un sait comment centrer ce truc -->
-        <footer class="footer py-4 bg-secondary">
-            <div class="container">
-                <div class="row text-center">Copyright © Mines Space 2020 - 2024</div>
-            </div> 
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Modal 1-->
-        <div class="portfolio-modal modal fade" id="project-marsaut" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">MARSAUT 0</h2>
-                                    <p class="item-intro text-muted">Probe rocket project.</p>
-                                    <img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/logo-marsaut.png" alt="" />
-                                    <div class="sketchfab-embed-wrapper text-center"> <iframe style="min-height: 350px; width:80%;" title="Marsaut 0 - fusex" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/7a6c3129f2d44891bfc92a4b15ab961e/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/marsaut-0-fusex-7a6c3129f2d44891bfc92a4b15ab961e?utm_medium=embed&utm_campaign=share-popup&utm_content=7a6c3129f2d44891bfc92a4b15ab961e" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Marsaut 0 - fusex </a> by <a href="https://sketchfab.com/paulboymond?utm_medium=embed&utm_campaign=share-popup&utm_content=7a6c3129f2d44891bfc92a4b15ab961e" target="_blank" style="font-weight: bold; color: #1CAAD9;"> paulboymond </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=7a6c3129f2d44891bfc92a4b15ab961e" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
-                                    <p class="text-muted-justify">
-                                        For our first student space project, we want to build a single-stage probe rocket, called Marsaut 0. Its role is to allow us to study a monitoring architecture.</br></br>
-                                        Through the use of telemetry (Radio - Lora: 868 Mhz), we want to have the ability to obtain in real time, the flight parameters of the rocket thanks to in situ sensors (Trajectory, Sudden effort, Flight events).</br></br>
-                                        This study will allow us to validate our entire monitoring system, and thus be able to reuse it on future projects.</br></br>
-                                        Our payload is broken down into two parts:
-                                        <ul class="text-muted-justify">
-                                            <li>A system embedded in the rocket allowing the in situ acquisition of flight data and their transmission by a radio module.</li>
-                                            <li>A ground station that can retrieve telemetry and display the various information on a monitor.</li>
-                                        </ul>
-                                    </p>
-                                    <ul class="list-inline text-muted">
-                                        <li>Date: September 2020 - June 2021</li>
-                                        <li>Members: Quentin B. - Paul B. - Arthur C. - Paul M. - Sixtine P.</li>
-                                        <li>Category: Probe rocket</li>
-                                    </ul>
-
-                                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="./ms0-result.html" target="_blank">See project page</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="container footer__legal">
+            <p>
+                <span>© MINES SPACE 2019 – 2026</span>
+                <button class="footer__link" type="button" data-consent-open>Manage cookies</button>
+            </p>
         </div>
-        <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="project-marsaut1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">MARSAUT 1</h2>
-                                    <p class="item-intro text-muted">Probe rocket project.</p>
-                                    <img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/logo-marsaut1.png" alt="" />
-                                    <div class="sketchfab-embed-wrapper text-center"> <iframe style="min-height: 350px; width:100%;" title="MARSAUT 1 | FUSEX 2022" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/729124ca0c2247a9a29a44643b3a2f73/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/marsaut-1-fusex-2022-729124ca0c2247a9a29a44643b3a2f73?utm_medium=embed&utm_campaign=share-popup&utm_content=729124ca0c2247a9a29a44643b3a2f73" target="_blank" style="font-weight: bold; color: #1CAAD9;"> MARSAUT 1 | FUSEX 2022 </a> by <a href="https://sketchfab.com/paulboymond?utm_medium=embed&utm_campaign=share-popup&utm_content=729124ca0c2247a9a29a44643b3a2f73" target="_blank" style="font-weight: bold; color: #1CAAD9;"> paulboymond </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=729124ca0c2247a9a29a44643b3a2f73" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+    </footer>
 
-                                    <p class="text-muted-justify">
-                                        <b>This new mission consists of two parts, a powerful launcher capable of carrying a 3kg payload to an altitude of 2000m, and an autonomous demonstrator capable of landing at a given position.</b>
-                                    </p>
+    <dialog class="modal" id="project-dialog" aria-labelledby="dialog-title">
+        <button class="icon-btn modal__close" type="button" data-dialog-close aria-label="Close the sheet">
+            <svg aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+        <div class="modal__content" data-dialog-content></div>
+    </dialog>
 
-                                    <h3 class="text-uppercase">Launcher</h3>
-                                    <p class="text-muted-justify">
-                                        The launcher is an improved and enlarged version of our first rocket, MS0. It takes again the great bases of this first project, like the supporting lattice, the aluminium skin... Several points have nevertheless evolved in order to facilitate the assembly of the rocket as well as its use. For example the fact of drawing the rocket in ramp and not in cage. We also change from a pro54 to a pro75 motor, decisions motivated by the increase of the MS1 size: 180cm high for 120mm diameter and a 12kg weight. In the same way, the rocket makes its descent under a conventional round parachute.
-                                    </p>
-
-                                    <h3 class="text-uppercase">Payload</h3>
-                                    <p class="text-muted-justify">
-                                        The payload of MS1, which is also the experiment of this project is a 'drone' embarked in the launcher and deployed at apogee. Its objective once released is to carry out a controlled fall and to brake to land at a point planned in advance. The particularity of this system is that it wishes to reproduce the way a rocket with a liquid propellant would land: the thrust vector. For technical reasons, we chose to use an electric turbine providing all the thrust vector and 4 fins directing the flow and allowing to stabilize and control the drone.
-                                    </p>
-
-                                    <ul class="list-inline text-muted">
-                                        <li>Date: September 2021 - July 2022</li>
-                                        <li>Members: Quentin B. - Melchior B. - Paul B. - Arthur C. - Paul M. - Sixtine P.</li>
-                                        <li>Category: Probe rocket</li>
-                                    </ul>
-                                    
-                                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="./ms0-result.html" target="_blank">See project page</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <dialog class="modal modal--lightbox" id="lightbox" aria-label="Enlarged photo">
+        <button class="icon-btn modal__close" type="button" data-dialog-close aria-label="Close the photo">
+            <svg aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+        <figure class="lightbox__figure">
+            <img class="lightbox__img" alt="" data-lightbox-img />
+            <figcaption class="lightbox__caption">
+                <span data-lightbox-caption></span>
+                <span class="lightbox__count" data-lightbox-count></span>
+            </figcaption>
+        </figure>
+        <div class="lightbox__nav">
+            <button class="icon-btn" type="button" data-lightbox-prev aria-label="Previous photo"><svg aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+            <button class="icon-btn" type="button" data-lightbox-next aria-label="Next photo"><svg aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
         </div>
-        <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="project-mse" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">MSE</h2>
-                                    <p class="item-intro text-muted">Probe rocket project.</p>
-                                    <img class="img-fluid d-block mx-auto" src="../assets/img/portfolio/logo-mse.png" alt="" />
-                                    <p class="text-muted-justify">
-                                        <b>The MSE (MarSonique) project is a supersonic FUSEX.</b>
-                                    </p>
-                                    <p class="text-muted-justify">
-                                        This launcher is equipped with a pro54 engine, and has a payload capacity of 350g.</br>
-                                        The appogee will be at 2500m, with a peak at 380m/s (<b>mach 1.1</b>)
-                                    </p>
+    </dialog>
 
-                                    <ul class="list-inline text-muted">
-                                        <li>Date: September 2022 - July 2023</li>
-                                        <li>Members: Quentin B. - Louis B. - Paul B. - Paul M.</li>
-                                        <li>Category: FUSEX</li>
-                                    </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="./mse-result.html" target="_blank">See project page</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal 4-->
-        <div class="portfolio-modal modal fade" id="project-fuseebulon" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Fuséebulon</h2>
-                                    <p class="item-intro text-muted">Projet Minif</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/logo-fuseebulon.png" alt="" />
-                                    <p class="text-muted-justify">
-                                        <b>Fuséebulon is... </b>
-                                    </p>
-                                    <p class="text-muted-justify">
-                                        Work in progress
-                                    </p>
-
-                                    <ul class="list-inline text-muted">
-                                        <li>Date : Septembre 2022 - Juillet 2023</li>
-                                        <li>Members : Quentin H. - Erwin M. - Malo D.</li>
-                                        <li>Category : Minif</li>
-                                    </ul>
-                                    
-                                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" target="_blank" href="https://drive.google.com/file/d/1y68sGiWLEB5ABGPqYmmWeNAWC501L4Wj/view?usp=drive_link">See results</a>
-                                    <p class="text-muted-center">
-                                        Work in progress
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 5-->
-        <div class="portfolio-modal modal fade" id="project-epsijlon" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Fuséebulon</h2>
-                                    <p class="item-intro text-muted">Projet Minif</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/logo-espijlon.png" alt="" />
-                                    <p class="text-muted-justify">
-                                        <b>Epsiᒧᒪon is ...</b>
-                                    </p>
-                                    <p class="text-muted-justify">
-                                        Work in progress.
-                                    </p>
-
-                                    <ul class="list-inline text-muted">
-                                        <li>Date : Septembre 2022 - Juillet 2023</li>
-                                        <li>Members : Evann K. - Aldric P. </li>
-                                        <li>Category : Minif</li>
-                                    </ul>
-                                    
-                                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" target="_blank" href="https://drive.google.com/file/d/1t_-QeOVd8icOFRgIPTI3qqFxIy1fmtz-/view?usp=drive_link">Voir le rapport de mission</a>
-                                    <p class="text-muted-center">
-                                        Page du projet en développement.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 6-->
-        <div class="portfolio-modal modal fade" id="project-prometheus" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Prometheus</h2>
-                                    <p class="item-intro text-muted">Projet FUSEX</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/logo-prometheus.png" alt="" />
-                                    <p class="text-muted-justify">
-                                        <b>Prometheus is a two-stage FUSEX rocket developed by the "Fuséebulon" team. Our goal is to make the FUSEX operational for C'Space 2025 by successfully achieving stage separation and igniting the second engine to propel the ship.</b>
-                                    </p>
-                                    <p class="text-muted-justify">                                     
-
-                                        For the Booster, we are using a Pro 75-3G engine, capable of supporting the rocket's weight, which is around 10 kg. For the Ship, we have chosen a Pro 24-6G engine. Unlike last year, we opted for a lattice framework structure to facilitate assembly and an aluminum skin machined by a third party for greater precision.
-
-                                        We are considering the deployment of a payload in the future…
-                                    </p>
-
-                                    <ul class="list-inline text-muted">
-                                        <li>Date : Septembre 2023 - Juillet 2025</li>
-                                        <li>Members : Quentin H. - Erwin M. - Malo D.</li>
-                                        <li>Category : FUSEX</li>
-                                    </ul>
-                                    
-                                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" target="_blank" href="https://drive.google.com/file/d/1HP94IPOl7JZm1eFHCRb60DDMMMm6RJvw/view?usp=drive_link">See project</a>
-                                    <p class="text-muted-center">
-                                        Work in progress
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 7-->
-        <div class="portfolio-modal modal fade" id="project-epsijlon2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Epsiᒧᒪon 2</h2>
-                                    <p class="item-intro text-muted">Projet FUSEX</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/logo-epsijlon2.png" alt="" />
-                                    <p class="text-muted-justify">
-                                        <b>Epsiᒧᒪon2 is ...</b>
-                                    </p>
-                                    <p class="text-muted-justify">
-                                        Work in progress                                    </p>
-
-                                    <ul class="list-inline text-muted">
-                                        <li>Date : Septembre 2023 - Aujourd'hui</li>
-                                        <li>Members : Evann K. - Aldric P. </li>
-                                        <li>Category : FUSEX</li>
-                                    </ul>
-                                    
-                                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" target="_blank" href="https://drive.google.com/file/d/1oygwIaQ1mfM2fQ84rxPEd_04zNU5UHzU/view?usp=drive_link">See project</a>
-                                    <p class="text-muted-center">
-                                        Work in progress
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 8-->
-        <div class="portfolio-modal modal fade" id="project-marianne6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Marianne 6</h2>
-                                    <p class="item-intro text-muted">Projet Minif</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/logo-marianne6-400x300.png" alt="" />
-                                    <p class="text-muted-justify">
-                                        <b>Marianne 6 is </b>
-                                    </p>
-                                    <p class="text-muted-justify">
-                                        Work in progress
-                                    </p>
-
-                                    <ul class="list-inline text-muted">
-                                        <li>Date : Septembre 2023 - Juillet 2024</li>
-                                        <li>Members : Gaël K. - Thomas J. - Romain B.</li>
-                                        <li>Category : Minif</li>
-                                    </ul>
-                                    
-                                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" target="_blank" href="https://drive.google.com/file/d/18U_2-tTQgnk464eRbKrLdMKi4GXPuK9i/view?usp=drive_link">See project</a>
-                                    <p class="text-muted-center">
-                                        Work in progress
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 9-->
-        <div class="portfolio-modal modal fade" id="project-kissrocket" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">KissRocket</h2>
-                                    <p class="item-intro text-muted">Projet Minif</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/logo-kissrocket.png" alt="" />
-                                    <p class="text-muted-justify">
-                                        <b>KissRocket is ...</b>
-                                    </p>
-                                    <p class="text-muted-justify">
-                                        Work in progress
-                                    </p>
-
-                                    <ul class="list-inline text-muted">
-                                        <li>Date : Septembre 2023 - Juillet 2024</li>
-                                        <li>Members : Eliot S. - Titouan L. - Benoît C. - Mathieu B. - Anaïs D.</li>
-                                        <li>Category : Minif</li>
-                                    </ul>
-                                    
-                                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" target="_blank" href="https://drive.google.com/file/d/1XGDMGqAnorLfcIowGzgS6X2oxtvs_EYH/view?usp=drive_link">See project</a>
-                                    <p class="text-muted-center">
-                                        Page du projet en développement.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-		<!-- Modal Fourneyron-->
-<div class="portfolio-modal modal fade" id="project-fourneyron" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="modal-body">
-                            <h2 class="text-uppercase">Fourneyron</h2>
-                            <p class="item-intro text-muted">Projet Minif</p>
-                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/logo-fourneyron.png" alt="" />
-                            <p class="text-muted-justify">
-                                <b>Le projet Fourneyron est une Minif</b>
-                            </p>
-                            <p class="text-muted-justify">
-                                Page du projet en développement. Vous pouvez consulter le document de définition du projet en cliquant sur le bouton ci-dessous.
-                            </p>
-                            <ul class="list-inline text-muted">
-                                <li>Date : Septembre 2024 - Juillet 2025</li>
-                                <li>Membres : Antonin B. - Quentin L. - Matthias C.</li>
-                                <li>Catégorie : Minif</li>
-                            </ul>
-                            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" target="_blank" href="https://drive.google.com/file/d/1x-hCnFTbcxSc25TDlKY_Au2BTLm0UWHa/view?usp=sharing">See project</a>
-                            <p class="text-muted-center">
-                                Page du projet en développement.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="../js/scripts.js"></script>
-    </body>
+    <script src="../assets/carrousel/photos.js"></script>
+    <script src="../js/main.js" defer></script>
+</body>
 </html>
